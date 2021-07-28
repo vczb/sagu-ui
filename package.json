@@ -1,0 +1,22 @@
+{
+  "name": "sagu-ui",
+  "version": "1.0.4",
+  "description": "It's a fun react library",
+  "repository": "vczb/sagu-ui",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "vczb",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.15",
+    "react": "^17.0.2",
+    "typescript": "^4.3.5"
+  }
+}

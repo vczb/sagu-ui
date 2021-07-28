@@ -1,0 +1,7 @@
+coverage/
+scripts/
+example/
+test/
+vscode/
+rollup.config.*
+.*
