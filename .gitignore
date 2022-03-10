@@ -5,6 +5,7 @@ node_modules
 lib
 build
 dist
+storybook-static
 
 # misc
 .DS_Store
@@ -17,4 +18,9 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+#vscode
+
+.vscode
 
