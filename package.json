@@ -1,6 +1,6 @@
 {
   "name": "sagu-ui",
-  "version": "1.1.8",
+  "version": "1.1.8-alpha",
   "description": "It's a minimalist React library",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "main": "lib/index.js",
   "types": "lib",
-   "scripts": {
+  "scripts": {
     "build": "tsc -p .",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit",
