@@ -1,6 +1,20 @@
-# React Library Starter
+# SAGU-UI
 
-This project is a boilerplate for a React UI library.
+It's a simple and faster React UI
+
+## Installation
+
+sagu-ui is available as an [npm package](https://www.npmjs.com/package/sagu-ui).
+
+To install it, run:
+
+```bash
+  //with npm
+  npm install sagu-ui
+
+  //with yarn
+  yarn add sagu-ui
+```
 
 ## What is inside?
 
@@ -35,3 +49,6 @@ This project is a boilerplate for a React UI library.
 |   ├── theme.ts
 ```
 
+## License
+
+This project is licensed under the [MIT](./LICENSE) License.
