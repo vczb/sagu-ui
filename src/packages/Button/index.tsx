@@ -1,28 +1,23 @@
 import React from 'react'
-import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
-
+import { ButtonHTMLAttributes } from 'react'
 import * as S from './styles'
 
-type ButtonTypes =
-  | AnchorHTMLAttributes<HTMLAnchorElement>
-  | ButtonHTMLAttributes<HTMLButtonElement>
-
 export type ButtonProps = {
-  children: React.ReactNode | string | null
-  size?: 'small' | 'medium' | 'large'
-  variant?: 'light'
-} & ButtonTypes
-
+  children: React.ReactNode
+  variant?: 'primary' | 'secondary'
+  size?: 'xsmall' | 'small' | 'medium' | 'large'
+  outline?: boolean
+} & ButtonHTMLAttributes<HTMLButtonElement>
 const Button = ({
   children,
-  size = 'small',
-  variant = 'light'
-}: ButtonProps) => {
-  return (
-    <S.Button variant={variant} size={size}>
-      {children}
-    </S.Button>
-  )
-}
+  variant = 'primary',
+  size,
+  outline = true,
+  ...props
+}: ButtonProps) => (
+  <S.Button size={size} variant={variant} outline={outline} {...props}>
+    {children}
+  </S.Button>
+)
 
 export default Button

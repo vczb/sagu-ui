@@ -1,40 +1,45 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from '.'
 
-const buttonModifier = {
-  light: (theme: DefaultTheme) => css`
-    color: ${theme.colors.dark};
-    background: ${theme.colors.white};
-    border: 1px solid ${theme.colors.gray.lightest};
+const buttonVariants = {
+  primary: (theme: DefaultTheme) => css`
+    border-color: ${theme.colors.primary.medium};
+    color: ${theme.colors.primary.medium};
     &:hover {
-      background: ${theme.colors.gray.lighter};
+      border-color: ${theme.colors.secondary.medium};
+      color: ${theme.colors.secondary.medium};
     }
     &:active {
-      background: ${theme.colors.gray.base};
-      color: ${theme.colors.black};
+      border-color: ${theme.colors.secondary.dark};
+      color: ${theme.colors.secondary.dark};
     }
   `,
-  small: (theme: DefaultTheme) => css`
-    padding: ${theme.spacings.xxsmall};
-  `,
-  medium: (theme: DefaultTheme) => css`
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
-  `,
-  large: (theme: DefaultTheme) => css`
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.small};
+  secondary: (theme: DefaultTheme) => css`
+    border-color: ${theme.colors.secondary.medium};
+    color: ${theme.colors.secondary.medium};
+    &:hover {
+      border-color: ${theme.colors.primary.light};
+      color: ${theme.colors.primary.light};
+    }
+    &:active {
+      border-color: ${theme.colors.primary.medium};
+      color: ${theme.colors.primary.medium};
+    }
   `
 }
 
-export const Button = styled.button<Pick<ButtonProps, 'variant' | 'size'>>`
-  ${({ theme, variant, size }) => css`
-    border: none;
+export const Button = styled.button<
+  Pick<ButtonProps, 'variant' | 'outline' | 'size'>
+>`
+  ${({ theme, variant, outline, size = 'small' }) => css`
     cursor: pointer;
-
-    border-radius: ${theme.border.radius};
-
+    border: ${outline ? '0.2rem solid' : 'none'} ;
+    background-color: transparent;
+    font-weight: ${theme.font.weights.bold};
+    border-radius: ${theme.border.xxsmall};
     transition: ${theme.transition.default};
-
-    ${!!variant && buttonModifier[variant](theme)};
-    ${!!size && buttonModifier[size](theme)};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
+    font-size: ${theme.font.sizes[size]};
+    ${!!variant && buttonVariants[variant](theme)}}
   `}
 `
