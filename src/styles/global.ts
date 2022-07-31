@@ -32,7 +32,7 @@ const GlobalStyles: GlobalStyleComponent<
     }
 
     body {
-      font-family: ${globalFontFamily || theme.font.family};
+      font-family: ${globalFontFamily || theme.font.family.primary};
       font-size: ${theme.font.sizes.medium};
     }
   `}

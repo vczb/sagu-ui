@@ -9,11 +9,10 @@ export default {
     xxsmall: '0.3rem'
   },
   font: {
-    family:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    light: 300,
-    normal: 400,
-    bold: 600,
+    family: {
+      primary:
+        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+    },
     sizes: {
       xsmall: '1.2rem',
       small: '1.4rem',
@@ -75,11 +74,11 @@ export default {
     modal: 40,
     alwaysOnTop: 50
   },
-  transition: {
+  transitions: {
     default: '0.3s ease-in-out',
     fast: '0.1s ease-in-out'
   },
-  shadow: {
+  shadows: {
     inner: 'inset 0px 4px 4px rgba(0, 0, 0, 0.25)',
     default: 'rgb(0 0 0 / 15%) 0px 2rem 8rem 0',
     focus: '0 0 0.5rem #53C3D0'

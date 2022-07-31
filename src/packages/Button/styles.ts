@@ -37,7 +37,7 @@ export const Button = styled.button<
     background-color: transparent;
     font-weight: ${theme.font.weights.bold};
     border-radius: ${theme.border.xxsmall};
-    transition: ${theme.transition.default};
+    transition: ${theme.transitions.default};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes[size]};
     ${!!variant && buttonVariants[variant](theme)}}
