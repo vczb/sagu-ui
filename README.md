@@ -1,4 +1,4 @@
-# SAGU-UI
+# [SAGU-UI](https://vczb.github.io/sagu-ui)
 
 It's a simple and faster React UI
 
@@ -14,6 +14,26 @@ To install it, run:
 
   //with yarn
   yarn add sagu-ui
+```
+
+## Usage
+
+Here is a quick example to get you started, **it's all you need**:
+
+```js
+import React from 'react'
+import { theme, SaguGlobalStyles, SaguProvider, Button } from 'sagu-ui'
+
+function App() {
+  return (
+    <SaguProvider theme={theme}>
+      <SaguGlobalStyles />
+      <Button>Click me</Button>
+    </SaguProvider>
+  )
+}
+
+export default App
 ```
 
 ## What is inside?

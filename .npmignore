@@ -7,3 +7,7 @@ storybook-static
 .storybook
 rollup.config.*
 .*
+*stories.*
+node_modules/
+docs-build/
+.github

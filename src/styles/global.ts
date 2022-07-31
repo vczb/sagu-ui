@@ -5,12 +5,12 @@ import {
   DefaultTheme
 } from 'styled-components'
 
-type GlobalStylesProps = {
+type SaguGlobalStylesProps = {
   globalFontFamily?: string
 }
 
-const GlobalStyles: GlobalStyleComponent<
-  GlobalStylesProps,
+const SaguGlobalStyles: GlobalStyleComponent<
+  SaguGlobalStylesProps,
   DefaultTheme
 > = createGlobalStyle`
   * {
@@ -39,4 +39,4 @@ const GlobalStyles: GlobalStyleComponent<
 
 `
 
-export default GlobalStyles
+export default SaguGlobalStyles
