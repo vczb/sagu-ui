@@ -6,6 +6,7 @@ lib
 build
 dist
 storybook-static
+docs-build
 
 # misc
 .DS_Store
@@ -21,7 +22,7 @@ yarn-error.log*
 
 
 #vscode
-
 .vscode
 
-docs-build
+#nodejs
+.tool-versions

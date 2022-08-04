@@ -58,6 +58,8 @@ export default App
 /lib
 /src
 ├── index.ts
+├── animations
+|   ├── placeholder.ts
 ├── packages
 |   ├── index.ts
 |   ├── Button
@@ -67,6 +69,7 @@ export default App
 ├── styles
 |   ├── global.ts
 |   ├── theme.ts
+|   ├── provider.ts
 ```
 
 ## License

@@ -11,3 +11,4 @@ rollup.config.*
 node_modules/
 docs-build/
 .github
+.tool-versions
