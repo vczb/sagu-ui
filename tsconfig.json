@@ -79,6 +79,7 @@
       }
     ]
   },
+  "exclude": ["./**/**/stories.*", "./**/**/mock.*", "./**/**/test.*"],
   "files": ["src/types/styled-components.d.ts"],
   "include": ["src"]
 }

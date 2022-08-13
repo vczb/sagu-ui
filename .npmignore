@@ -6,9 +6,10 @@ vscode/
 storybook-static
 .storybook
 rollup.config.*
-.*
-*stories.*
 node_modules/
 docs-build/
 .github
 .tool-versions
+./**/*/stories.*
+./**/*/mock.*
+./**/*/test.*
