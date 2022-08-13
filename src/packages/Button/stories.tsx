@@ -11,19 +11,9 @@ export default {
   },
   argTypes: {
     variant: {
-      options: ['primary', 'secondary'],
-      control: { type: 'radio' }
-    },
-    outline: {
-      control: false
+      options: ['primary', 'secondary']
     }
   }
 } as Meta
 
-export const Default: Story<ButtonProps> = (args) => (
-  <Button {...args} outline={false} />
-)
-
-export const Outline: Story<ButtonProps> = (args) => (
-  <Button {...args} outline={true} />
-)
+export const Default: Story<ButtonProps> = (args) => <Button {...args} />
