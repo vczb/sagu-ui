@@ -16,6 +16,8 @@ To install it, run:
   yarn add sagu-ui
 ```
 
+_styled-componets are required_
+
 ## Usage
 
 Here is a quick example to get you started, **it's all you need**:
@@ -35,6 +37,8 @@ function App() {
 
 export default App
 ```
+
+Take a look at this [codesandbox](https://codesandbox.io/s/sagu-ui-example-r22mum?file=/src/App.js) demo
 
 ## What is inside?
 
