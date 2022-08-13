@@ -7,6 +7,11 @@ export default {
   component: CheckBox,
   args: {
     title: 'New York'
+  },
+  argTypes: {
+    type: {
+      control: false
+    }
   }
 } as Meta
 
