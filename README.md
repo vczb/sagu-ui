@@ -1,4 +1,4 @@
-# [SAGU-UI](https://vczb.github.io/sagu-ui)
+![SAGU-UI](./logo.png)
 
 It's a simple and faster React UI
 
