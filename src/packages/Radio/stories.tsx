@@ -7,11 +7,6 @@ export default {
   component: Radio,
   args: {
     title: 'Rio de Janeiro'
-  },
-  argTypes: {
-    type: {
-      control: false
-    }
   }
 } as Meta
 
