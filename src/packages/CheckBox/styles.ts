@@ -6,7 +6,7 @@ export const CheckBoxLabel = styled.label`
     span {
       position: relative;
       font-family: ${theme.font.family.primary};
-      color: ${theme.colors.primary.medium};
+      color: ${theme.colors.primary.dark};
       font-size: ${theme.font.sizes.medium};
       margin-left: ${theme.spacings.xsmall};
       &::after {

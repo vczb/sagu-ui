@@ -6,7 +6,7 @@ export const TextField = styled.input`
     border-radius: ${theme.border.xxsmall};
     border: 0.2rem solid ${theme.colors.primary.lighter};
     border-radius: ${theme.border.xxsmall};
-    color: ${theme.colors.primary.medium};
+    color: ${theme.colors.primary.dark};
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.weights.regular};
     font-family: ${theme.font.family.primary};

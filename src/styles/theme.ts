@@ -40,7 +40,8 @@ export default {
     primary: {
       lighter: '#E8EFF5',
       light: '#1C5D9F',
-      medium: '#022B54'
+      medium: '#022B54',
+      dark: '#01172E'
     },
     secondary: {
       lighter: '#D1EFF2',
