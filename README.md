@@ -40,6 +40,10 @@ export default App
 
 Take a look at this [codesandbox](https://codesandbox.io/s/sagu-ui-example-r22mum?file=/src/App.js) demo
 
+## Contributing
+
+You can contribute to this project by opening an issue or creating a pull request.
+
 ## What is inside?
 
 - [TypeScript](https://www.typescriptlang.org/)
@@ -64,6 +68,8 @@ Take a look at this [codesandbox](https://codesandbox.io/s/sagu-ui-example-r22mu
 ├── index.ts
 ├── animations
 |   ├── placeholder.ts
+├── hooks
+|   ├── ...
 ├── packages
 |   ├── index.ts
 |   ├── Button
