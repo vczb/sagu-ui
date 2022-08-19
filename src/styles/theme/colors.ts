@@ -23,7 +23,7 @@ export const secondary = {
 export const neutral = {
   lightest: '#F4F4F9',
   lighter: '#EFF0F9',
-  base: '#E6E6E6',
+  medium: '#E6E6E6',
   dark: '#B3B3B3',
   darker: '#999999',
   darkest: '#808080',
