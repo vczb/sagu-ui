@@ -51,7 +51,7 @@ Take a look at this [codesandbox](https://codesandbox.io/s/sagu-ui-example-r22mu
 ## Available commands
 
 - `build`: build the files in the `lib` directory
-- `storybook`: run the storybook at the address `localhost:6006`
+- `sb`: run the storybook at the address `localhost:6006`
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
 
