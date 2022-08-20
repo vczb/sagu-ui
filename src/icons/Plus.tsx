@@ -1,4 +1,6 @@
-export const Plus = () => (
+import React from 'react'
+
+const Plus = () => (
   <svg fill="currentColor" height="1em" viewBox="0 0 24 24" width="1em">
     <path
       clipRule="evenodd"
