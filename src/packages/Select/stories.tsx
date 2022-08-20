@@ -3,6 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 
 import Select, { SelectProps } from '.'
 import { mock } from './mock'
+import Tag from '../Tag'
 
 export default {
   title: 'Select',
@@ -23,10 +24,15 @@ export default {
 export const Default: Story<SelectProps> = (args) => {
   const [value, setValue] = useState('')
   const handleClick = (item: string) => {
-    if (value.length) {
-      setValue(`${value}, ${item}`)
+    if (value.includes(item)) {
+      const regexp = new RegExp(`\\${item}, |, ${item}|${item}`)
+      setValue(value.replace(regexp, ''))
     } else {
-      setValue(item)
+      if (value.length) {
+        setValue(`${value}, ${item}`)
+      } else {
+        setValue(item)
+      }
     }
   }
   return (
@@ -34,26 +40,20 @@ export const Default: Story<SelectProps> = (args) => {
       <div
         style={{
           display: 'grid',
+          gridGap: '0.5rem',
           gridTemplateColumns: '1fr',
-          width: '30rem',
+          padding: '0.5rem',
           placeItems: 'center'
         }}
       >
         {mock.map((item) => (
-          <button
-            onClick={() => handleClick(item.name)}
+          <Tag
             key={item.id}
-            style={{
-              padding: '0.8rem',
-              width: '100%',
-              textAlign: 'center',
-              border: 'none',
-              background: 'none',
-              cursor: 'pointer'
-            }}
-          >
-            {item.name}
-          </button>
+            value={item.name}
+            onClick={() => handleClick(item.name)}
+            isSlashed={value.includes(item.name)}
+            isPointer
+          />
         ))}
       </div>
     </Select>
