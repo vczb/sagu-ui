@@ -60,6 +60,8 @@ export default {
     }
   },
   spacings: {
+    xmini: '0.2rem',
+    mini: '0.4rem',
     xxsmall: '0.8rem',
     xsmall: '1.6rem',
     small: '2.4rem',
