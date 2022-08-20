@@ -8,6 +8,7 @@ storybook-static
 rollup.config.*
 node_modules/
 docs-build/
+generators
 .github
 .tool-versions
 ./**/*/stories.*

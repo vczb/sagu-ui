@@ -16,7 +16,8 @@
     "prettier:format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "prettier:check": "prettier -c \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "sb": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "keywords": [
     "React",
@@ -45,6 +46,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "plop": "^3.1.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -58,6 +58,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 - `sb`: run the storybook at the address `localhost:6006`
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
+- `generate <Component name>`: create a component boilerplate
 
 ## Project structure
 
