@@ -51,6 +51,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 - [Storybook](https://storybook.js.org/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Jest](https://jestjs.io/)
 
 ## Available commands
 
@@ -59,6 +60,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
 - `generate <Component name>`: create a component boilerplate
+- `test`: test all components
 
 ## Project structure
 
@@ -77,6 +79,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 |   |   ├── index.tsx
 |   |   ├── stories.tsx
 |   |   └── styles.ts
+|   |   └── test.tsx
 ├── styles
 |   ├── global.ts
 |   ├── theme.ts
