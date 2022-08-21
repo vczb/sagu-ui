@@ -1,5 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { HeadingProps, lineColors } from '.'
+import { media } from '../../styles'
 
 export const WrapperModifiers = {
   small: (theme: DefaultTheme) => css`
@@ -10,6 +11,10 @@ export const WrapperModifiers = {
   `,
   medium: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.xlarge};
+
+    ${media.sm`
+      font-size: ${theme.font.sizes.xxlarge};
+    `}
   `,
   huge: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.huge};
