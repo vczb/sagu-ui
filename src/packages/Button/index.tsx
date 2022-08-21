@@ -4,7 +4,7 @@ import * as S from './styles'
 
 export type ButtonProps = {
   children: React.ReactNode
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'filled'
   size?: 'xsmall' | 'small' | 'medium' | 'large'
   outline?: boolean
 } & ButtonHTMLAttributes<HTMLButtonElement>

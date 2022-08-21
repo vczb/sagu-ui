@@ -25,6 +25,17 @@ const buttonVariants = {
       border-color: ${theme.colors.primary.medium};
       color: ${theme.colors.primary.medium};
     }
+  `,
+  filled: (theme: DefaultTheme) => css`
+    color: ${theme.colors.base.white};
+    background: ${theme.colors.primary.medium};
+
+    &:hover {
+      background: ${theme.colors.primary.dark};
+    }
+    &:active {
+      background: ${theme.colors.primary.medium};
+    }
   `
 }
 
@@ -36,7 +47,7 @@ export const Button = styled.button<
     border: ${outline ? '0.2rem solid' : 'none'} ;
     background-color: transparent;
     font-weight: ${theme.font.weights.bold};
-    border-radius: ${theme.border.xxsmall};
+    border-radius: ${theme.border.radius};
     transition: ${theme.transitions.default};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes[size]};

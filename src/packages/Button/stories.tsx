@@ -7,12 +7,7 @@ export default {
   component: Button,
   args: {
     children: 'Sign Up',
-    variant: 'primary'
-  },
-  argTypes: {
-    variant: {
-      options: ['primary', 'secondary']
-    }
+    variant: 'filled'
   }
 } as Meta
 
