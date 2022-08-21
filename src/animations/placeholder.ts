@@ -6,7 +6,7 @@ const placeholder = css`
   background-image: linear-gradient(
     to right,
     currentColor 0%,
-    ${theme.colors.neutral.base} 20%,
+    ${theme.colors.neutral.medium} 20%,
     currentColor 40%,
     currentColor 100%
   );
