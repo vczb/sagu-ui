@@ -9,6 +9,7 @@ rollup.config.*
 node_modules/
 docs-build/
 generators
+.jest
 .github
 .tool-versions
 ./**/*/stories.*
