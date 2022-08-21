@@ -1,5 +1,6 @@
 export default {
   container: {
+    small: '60rem',
     medium: '130rem',
     gutter: '3.2rem'
   },
