@@ -14,3 +14,5 @@ export default {
 } as Meta
 
 export const Default: Story<MenuProps> = (args) => <Menu {...args} />
+
+export const IconMenu: Story<MenuProps> = (args) => <Menu {...args} asIcon />

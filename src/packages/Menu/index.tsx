@@ -3,6 +3,7 @@ import NavLink from '../NavLink'
 import * as S from './styles'
 import Paper from '../Paper'
 import { useOnClickOutside, useOnKeypress } from '../../hooks'
+import { Elipsis } from '../../icons'
 
 type ItemsProps = {
   path: string
@@ -12,10 +13,17 @@ type ItemsProps = {
 export type MenuProps = {
   title: string
   active?: boolean
+  asIcon?: boolean
   items?: ItemsProps[]
 } & MenuHTMLAttributes<HTMLMenuElement>
 
-const Menu = ({ title, active, items, ...props }: MenuProps) => {
+const Menu = ({
+  title,
+  active,
+  items,
+  asIcon = false,
+  ...props
+}: MenuProps) => {
   const [isActive, setIsActive] = useState(active)
 
   const ref = useRef<HTMLDivElement>(null)
@@ -32,13 +40,17 @@ const Menu = ({ title, active, items, ...props }: MenuProps) => {
 
   return (
     <S.Menu {...props} ref={ref}>
-      <S.MenuButton active={isActive} onClick={() => setIsActive(!isActive)}>
+      <S.MenuButton
+        asIcon={asIcon}
+        active={isActive}
+        onClick={() => setIsActive(!isActive)}
+      >
         <NavLink size="medium" active={isActive}>
-          {title}
+          {asIcon ? <Elipsis /> : title}
         </NavLink>
       </S.MenuButton>
       {isActive && (
-        <Paper placement="bottom" active={isActive}>
+        <Paper placement={asIcon ? 'right' : 'bottom'} active={isActive}>
           <S.MenuList>
             {items?.map(({ path, label }) => (
               <S.MenuItem key={path}>

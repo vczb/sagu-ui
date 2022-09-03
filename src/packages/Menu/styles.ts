@@ -10,8 +10,8 @@ export const Menu = styled.menu`
   flex-direction: column;
 `
 
-export const MenuButton = styled.button<Pick<MenuProps, 'active'>>`
-  ${({ theme, active }) => css`
+export const MenuButton = styled.button<Pick<MenuProps, 'active' | 'asIcon'>>`
+  ${({ theme, active, asIcon = false }) => css`
     cursor: pointer;
     border: none;
     background: transparent;
@@ -26,19 +26,32 @@ export const MenuButton = styled.button<Pick<MenuProps, 'active'>>`
       color: ${theme.colors.secondary.medium};
     }
 
-    &::after {
-      content: '';
-      z-index: 0;
-      color: inherit;
-      position: absolute;
-      border: solid currentColor;
-      border-width: ${active ? '0.2rem 0 0 0.2rem' : '0 0.2rem 0.2rem 0'};
-      display: inline-block;
-      padding: 0.2rem;
-      right: ${theme.spacings.xsmall};
-      top: ${active ? '60%' : '40%'};
-      transform: rotate(45deg) translateY(-50%);
-      transition: color ${theme.transitions.default};
+    ${!asIcon &&
+    css`
+      &::after {
+        content: '';
+        z-index: 0;
+        color: inherit;
+        position: absolute;
+        border: solid currentColor;
+        border-width: ${active ? '0.2rem 0 0 0.2rem' : '0 0.2rem 0.2rem 0'};
+        display: inline-block;
+        padding: 0.2rem;
+        right: ${theme.spacings.xsmall};
+        top: ${active ? '60%' : '40%'};
+        transform: rotate(45deg) translateY(-50%);
+        transition: color ${theme.transitions.default};
+      }
+    `}
+
+    svg {
+      width: auto;
+      height: ${theme.spacings.medium};
+      fill: ${theme.colors.primary.medium};
+      transition: fill ${theme.transitions.default};
+      &:hover {
+        fill: ${theme.colors.secondary.medium};
+      }
     }
 
     ${NavLink} {
