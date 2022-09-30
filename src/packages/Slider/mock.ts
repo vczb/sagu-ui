@@ -1,4 +1,6 @@
-export const mock = [
+import { ImageProps } from '.'
+
+export const mock: ImageProps[] = [
   {
     url: 'https://picsum.photos/id/237/400/200',
     listOrder: 0
