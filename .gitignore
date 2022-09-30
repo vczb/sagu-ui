@@ -26,3 +26,6 @@ yarn-error.log*
 
 #nodejs
 .tool-versions
+
+#other
+.yarn
