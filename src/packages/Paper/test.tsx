@@ -5,6 +5,30 @@ import { theme } from '../../styles'
 import Paper from '.'
 
 describe('<Paper />', () => {
+  it('Should render when active is true', () => {
+    render(
+      <Paper active={true} placement="right" data-testid="paper">
+        <p>Hello world!</p>
+      </Paper>
+    )
+    const paper = screen.getByTestId('paper')
+    expect(paper).toHaveStyleRule(
+      'display',
+      'block'
+    )
+  })
+  it('Should not render when active is false', () => {
+    render(
+      <Paper active={false} placement="right" data-testid="paper">
+        <p>Hello world!</p>
+      </Paper>
+    )
+    const paper = screen.getByTestId('paper')
+    expect(paper).toHaveStyleRule(
+      'display',
+      'none'
+    )
+  })
   it('Should render with children correctly', () => {
     render(
       <Paper placement="bottom">
