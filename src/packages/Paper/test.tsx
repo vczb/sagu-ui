@@ -12,10 +12,7 @@ describe('<Paper />', () => {
       </Paper>
     )
     const paper = screen.getByTestId('paper')
-    expect(paper).toHaveStyleRule(
-      'display',
-      'block'
-    )
+    expect(paper).toHaveStyleRule('display', 'block')
   })
   it('Should not render when active is false', () => {
     render(
@@ -24,10 +21,7 @@ describe('<Paper />', () => {
       </Paper>
     )
     const paper = screen.getByTestId('paper')
-    expect(paper).toHaveStyleRule(
-      'display',
-      'none'
-    )
+    expect(paper).toHaveStyleRule('display', 'none')
   })
   it('Should render with children correctly', () => {
     render(
