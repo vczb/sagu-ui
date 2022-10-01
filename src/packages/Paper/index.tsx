@@ -3,7 +3,7 @@ import React, { BaseHTMLAttributes, useRef } from 'react'
 import * as S from './styles'
 
 export type PaperProps = {
-  placement: 'bottom' | 'right'
+  placement: 'bottom' | 'left' | 'right'
   active?: boolean
   children: React.ReactNode
 } & BaseHTMLAttributes<HTMLDivElement>

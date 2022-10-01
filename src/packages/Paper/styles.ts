@@ -6,6 +6,10 @@ const paperModifiers = {
     left: 0;
     top: calc(100% + ${theme.spacings.xxsmall});
   `,
+  left: (theme: DefaultTheme) => css`
+    top: 0;
+    right: calc(100% + ${theme.spacings.xxsmall});
+  `,
   right: (theme: DefaultTheme) => css`
     top: 0;
     left: calc(100% + ${theme.spacings.xxsmall});

@@ -26,6 +26,18 @@ describe('<Paper />', () => {
       `calc(100% + ${theme.spacings.xxsmall})`
     )
   })
+  it('Should render in left placement', () => {
+    render(
+      <Paper placement="left" data-testid="paper">
+        <></>
+      </Paper>
+    )
+    const paper = screen.getByTestId('paper')
+    expect(paper).toHaveStyleRule(
+      'right',
+      `calc(100% + ${theme.spacings.xxsmall})`
+    )
+  })
   it('Should render in right placement', () => {
     render(
       <Paper placement="right" data-testid="paper">
