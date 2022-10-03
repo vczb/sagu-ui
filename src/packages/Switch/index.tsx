@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, Label, Switch } from './Style.ts'
+import { Input, Label, Switch } from './Style'
 
 export const ToggleSwitch = () => {
   const [checked, Check] = useState<boolean>(false)
