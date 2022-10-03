@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Label = styled.label`
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
-`;
+`
 
 export const Switch = styled.div`
   position: relative;
@@ -18,7 +18,7 @@ export const Switch = styled.div`
 
   &:before {
     transition: 300ms all;
-    content: "";
+    content: '';
     position: absolute;
     width: 28px;
     height: 28px;
@@ -28,7 +28,7 @@ export const Switch = styled.div`
     background: white;
     transform: translate(0, -50%);
   }
-`;
+`
 
 export const Input = styled.input`
   opacity: 0;
@@ -42,4 +42,4 @@ export const Input = styled.input`
       transform: translate(32px, -50%);
     }
   }
-`;
+`
