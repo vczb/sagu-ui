@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Input, Label, Switch } from './Style.ts'
 
 export const ToggleSwitch = () => {
-  const [checked, Check] = useState < boolean > (false)
+  const [checked, Check] = useState <boolean> (false)
   const handleChange = () => {
     if (checked === false) {
       Check(true)
