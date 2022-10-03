@@ -19,7 +19,7 @@ const Switch = styled.div`
 
   &:before {
     transition: 300ms all;
-    content: "";
+    content: '';
     position: absolute;
     width: 28px;
     height: 28px;
@@ -46,12 +46,12 @@ const Input = styled.input`
 `
 
 export const ToggleSwitch = () => {
-  const [checked, Check] = useState<boolean>(false);
+  const [checked, Check] = useState<boolean>(false)
   const handleChange = () => {
     if (checked === false) {
-      Check(true);
+      Check(true)
     } else {
-      Check(false);
+      Check(false)
     }
   }
   return (
