@@ -1,0 +1,12 @@
+* {
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgb(37, 56, 88);
+  }
+  
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
