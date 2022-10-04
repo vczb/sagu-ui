@@ -38,7 +38,7 @@ function App() {
 export default App
 ```
 
-Take a look at this [codesandbox](https://codesandbox.io/s/sagu-ui-example-r22mum?file=/src/App.js) demo
+Take a look at some [examples](./EXAMPLES.md) using [Sagu-UI](https://www.npmjs.com/package/sagu-ui)
 
 ## Contributing
 

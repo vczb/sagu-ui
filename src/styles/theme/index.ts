@@ -58,5 +58,11 @@ export default {
   shadows: {
     default: 'rgb(0 0 0 / 15%) 0px 2rem 8rem 0',
     focus: `0 0 0.5rem ${colors.secondary.medium}`
+  },
+  avatarSizes: {
+    large: '6rem',
+    medium: '4rem',
+    small: '3rem',
+    xsmall: '2rem'
   }
 } as const
