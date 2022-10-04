@@ -14,7 +14,6 @@ export default function App() {
                 if (newValue === 100) {
                     clearInterval(interval)
                 }
-
                 return newValue
             })
         }, 1000)
