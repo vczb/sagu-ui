@@ -1,15 +1,9 @@
-import React from "react";
-import * as S from './styles'
+import {ProgressBarComponent} from '@syncfusion/ej2-react-progressbar';
+import * as React from 'react';
 
-const ProgressBar = (props) => {
-  const { bgcolor, completed } = props;
-  return (
-    <div>
-      <div>
-        <span>{`${completed}%`}</span>
-      </div>
-    </div>
-  );
-};
-
-export default ProgressBar;
+class App extends React.Component {
+render() {
+  return ( <ProgressBarComponent/>);
+ }
+}
+export default App;
