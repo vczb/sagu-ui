@@ -30,9 +30,17 @@ export const neutral = {
   xdarkest: '#4D4D4D'
 }
 
+export const status = {
+  error: '#f44336',
+  warning: '#ffb300',
+  info: '#2196f3',
+  success: '#4caf50'
+}
+
 export default {
   base,
   primary,
   secondary,
-  neutral
+  neutral,
+  status
 }
