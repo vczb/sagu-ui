@@ -2,9 +2,9 @@
 // 2. Show the percentage of completion in text
 // 3. Color, width
 
-import React from "react";
-import PropTypes from "prop-types";
-import Styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Styled from 'styled-components';
 
 const Container = Styled.div`
   progress {
@@ -49,8 +49,8 @@ ProgressBar.propTypes = {
 
 ProgressBar.defaultProps = {
   max: 100,
-  color: "lightBlue",
-  width: "250px"
+  color: 'lightBlue',
+  width: '250px'
 };
 
 export default ProgressBar;
