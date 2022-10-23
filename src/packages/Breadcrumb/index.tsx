@@ -1,32 +1,46 @@
 import React from 'react'
+import NavLink, { NavLinkProps } from '../NavLink'
 import * as S from './styles'
+
+type BreadcrumbItem = {
+  name: string
+  link: string
+}
 
 export type BreadcrumbProps = {
   separator?: string
-  children: React.ReactNode
+  items: BreadcrumbItem[]
+  size?: NavLinkProps['size']
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({
+const Breadcrumb = ({
   separator = '/',
-  children
-}) => {
-  // Wrap all items in li tag
-  const allItems = React.Children.toArray(children)
-    .filter((child) => React.isValidElement(child))
-    .map((child, index) => <li key={`breadcrumb-item-${index}`}>{child}</li>)
+  items,
+  size = 'small'
+}: BreadcrumbProps) => {
+  if (!items) return null
 
   return (
     <S.Breadcrumb>
-      {allItems.map((item, index) =>
-        index !== 0
-          ? [
-              <S.BreadcrumbItem key={`breadcrumb-separator-${index}`}>
-                {separator}
-              </S.BreadcrumbItem>,
-              item
-            ]
-          : item
-      )}
+      {items.map((item, index) => (
+        <>
+          {index > 0 && (
+            <S.BreadcrumbItem key={`breadcrumb-${separator}-${index}`}>
+              {separator}
+            </S.BreadcrumbItem>
+          )}
+          <S.BreadcrumbItem key={`breadcrumb-${item.name}-${index}`}>
+            <NavLink
+              active={index === items.length - 1}
+              title={item.name}
+              size={size}
+              href={item.link}
+            >
+              {item.name}
+            </NavLink>
+          </S.BreadcrumbItem>
+        </>
+      ))}
     </S.Breadcrumb>
   )
 }
