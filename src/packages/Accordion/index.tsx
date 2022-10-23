@@ -4,7 +4,7 @@ import * as S from './styles'
 export type AccordionProps = {
   children: React.ReactNode
   title: string
-} & BaseHTMLAttributes<HTMLDivElement>
+} & BaseHTMLAttributes<HTMLDetailsElement>
 const Accordion = ({ children, title, ...props }: AccordionProps) => (
   <S.Wrapper {...props}>
     <S.Summary>

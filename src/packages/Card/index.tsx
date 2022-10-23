@@ -9,7 +9,7 @@ import Button, { ButtonProps } from '../Button'
 export type CardProps = {
   images: ImageProps[]
   title: Pick<HeadingProps, 'children'>
-  content: Pick<TextContentProps, 'value'>
+  content: TextContentProps['value']
   cta: Pick<ButtonProps, 'children'>
   handleClick: () => void
 }
