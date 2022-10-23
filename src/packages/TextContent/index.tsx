@@ -11,12 +11,7 @@ export type TextContentProps = {
   size?: 'small' | 'medium'
 } & HTMLProps
 
-const TextContent: React.ElementType = ({
-  value,
-  tag,
-  size,
-  ...props
-}: TextContentProps) => {
+const TextContent = ({ value, tag, size, ...props }: TextContentProps) => {
   if (tag === 'p')
     return (
       <S.Paragraph size={size} {...props}>
