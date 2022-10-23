@@ -25,11 +25,17 @@ const Breadcrumb = ({
       {items.map((item, index) => (
         <>
           {index > 0 && (
-            <S.BreadcrumbItem key={`breadcrumb-${separator}-${index}`}>
+            <S.BreadcrumbItem
+              key={`breadcrumb-${separator}-${index}`}
+              size={size}
+            >
               {separator}
             </S.BreadcrumbItem>
           )}
-          <S.BreadcrumbItem key={`breadcrumb-${item.name}-${index}`}>
+          <S.BreadcrumbItem
+            key={`breadcrumb-${item.name}-${index}`}
+            size={size}
+          >
             <NavLink
               active={index === items.length - 1}
               title={item.name}
