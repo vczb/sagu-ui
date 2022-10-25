@@ -43,6 +43,8 @@ export default App
 You can easily override the values of the theme object
 
 ```js
+import { theme, SaguProvider } from 'sagu-ui'
+
 function App() {
   const customTheme = Object.assign(theme)
 
@@ -50,6 +52,37 @@ function App() {
 
   return <SaguProvider theme={customTheme}>...</SaguProvider>
 }
+```
+
+Also you can add an entire custom object and it will be available on the Provider
+
+```js
+import { theme, SaguProvider } from 'sagu-ui'
+import { CustomWrapper } from './components/CustomWrapper'
+
+function App() {
+  const customTheme = Object.assign(theme)
+
+  customTheme.colors.tertiary = {
+    lighter: '#fb973a',
+    light: '#e37c1d',
+    medium: '#da710f',
+    dark: '#9e4c01'
+  }
+
+  return <SaguProvider theme={customTheme}>...</SaguProvider>
+}
+```
+
+```js
+// components/CustomWrapper.ts
+import styled, { css } from 'styled-components'
+
+export const CustomWrapper = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.tertiary.medium};
+  `}
+`
 ```
 
 ## Component customization
