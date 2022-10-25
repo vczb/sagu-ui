@@ -1,9 +1,11 @@
 export const base = {
-  alert: '#DC2626',
-  success: '#22C55E',
   white: '#F8F7FB',
   black: '#222222',
-  disabled: '#78716C'
+  disabled: '#78716C',
+  error: '#f44336',
+  warning: '#ffb300',
+  info: '#2196f3',
+  success: '#4caf50'
 }
 
 export const primary = {
@@ -30,17 +32,9 @@ export const neutral = {
   xdarkest: '#4D4D4D'
 }
 
-export const status = {
-  error: '#f44336',
-  warning: '#ffb300',
-  info: '#2196f3',
-  success: '#4caf50'
-}
-
 export default {
   base,
   primary,
   secondary,
-  neutral,
-  status
+  neutral
 }

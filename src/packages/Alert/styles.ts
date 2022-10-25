@@ -3,31 +3,31 @@ import { AlertProps } from '.'
 
 const severityShape = {
   error: (theme: DefaultTheme) => css`
-    background-color: ${theme.colors.status.error}1f;
+    background-color: ${theme.colors.base.error}1f;
   `,
   warning: (theme: DefaultTheme) => css`
-    background-color: ${theme.colors.status.warning}1f;
+    background-color: ${theme.colors.base.warning}1f;
   `,
   info: (theme: DefaultTheme) => css`
-    background-color: ${theme.colors.status.info}1f;
+    background-color: ${theme.colors.base.info}1f;
   `,
   success: (theme: DefaultTheme) => css`
-    background-color: ${theme.colors.status.success}1f;
+    background-color: ${theme.colors.base.success}1f;
   `
 }
 
 const severityIconColor = {
   error: (theme: DefaultTheme) => css`
-    color: ${theme.colors.status.error};
+    color: ${theme.colors.base.error};
   `,
   warning: (theme: DefaultTheme) => css`
-    color: ${theme.colors.status.warning};
+    color: ${theme.colors.base.warning};
   `,
   info: (theme: DefaultTheme) => css`
-    color: ${theme.colors.status.info};
+    color: ${theme.colors.base.info};
   `,
   success: (theme: DefaultTheme) => css`
-    color: ${theme.colors.status.success};
+    color: ${theme.colors.base.success};
   `
 }
 
