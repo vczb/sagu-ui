@@ -70,7 +70,11 @@ function App() {
     dark: '#9e4c01'
   }
 
-  return <SaguProvider theme={customTheme}>...</SaguProvider>
+  return (
+    <SaguProvider theme={customTheme}>
+      <CustomWrapper>...</CustomWrapper>
+    </SaguProvider>
+  )
 }
 ```
 
