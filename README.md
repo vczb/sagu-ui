@@ -38,6 +38,71 @@ function App() {
 export default App
 ```
 
+## Theme customization
+
+You can easily override the values of the theme object
+
+```js
+function App() {
+  const customTheme = Object.assign(theme)
+
+  customTheme.colors.primary.medium = '#510763'
+
+  return <SaguProvider theme={customTheme}>...</SaguProvider>
+}
+```
+
+## Component customization
+
+You have to many ways to customize the Sagu components
+
+**Using styled-components**
+
+```js
+import styled from 'styled-components'
+import { Button } from 'sagu-ui'
+
+const MyCustomButton = styled(Button)`
+  background: red;
+`
+...
+
+<MyCustomButton>My Button</MyCustomButton>
+```
+
+**Using inline styles**
+
+```js
+import { Button } from 'sagu-ui'
+
+...
+
+<Button
+  style={{
+    background: 'yellow'
+  }}
+>
+  My Button
+</Button>
+```
+
+**Using CSS classes**
+
+```css
+.button-green {
+  background: green;
+}
+```
+
+```js
+import { Button } from 'sagu-ui'
+import './styles.css'
+
+...
+
+<Button className="button-green">My Button</Button>
+```
+
 Take a look at some [examples](./EXAMPLES.md) using [Sagu-UI](https://www.npmjs.com/package/sagu-ui)
 
 ## Contributing
