@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from 'react'
+import TextContent from '../TextContent'
 import * as S from './styles'
 
 export type Colors = {
@@ -14,6 +15,7 @@ export type SwitchProps = {
   defaultChecked?: boolean
   disabled?: boolean
   onSwitch?: (event: ChangeEvent<HTMLInputElement>) => void
+  size?: 'small' | 'medium' | 'large'
 }
 
 const Switch = ({
@@ -22,25 +24,25 @@ const Switch = ({
   checked,
   defaultChecked = false,
   disabled = false,
+  size = 'medium',
   onSwitch
 }: SwitchProps) => {
   return (
-    <>
-      <S.Label>
-        <S.Span colors={colors} disabled={disabled}>
-          {label}
-        </S.Span>
-        <S.Input
-          type="checkbox"
-          colors={colors}
-          checked={checked}
-          defaultChecked={defaultChecked}
-          onChange={onSwitch}
-          disabled={disabled}
-        />
-        <S.Switch colors={colors} disabled={disabled} />
-      </S.Label>
-    </>
+    <S.Label disabled={disabled}>
+      {label && (
+        <TextContent size={size} disabled={disabled} value={label} tag="span" />
+      )}
+      <S.Input
+        type="checkbox"
+        colors={colors}
+        checked={checked}
+        defaultChecked={defaultChecked}
+        onChange={onSwitch}
+        disabled={disabled}
+        spanSize={size}
+      />
+      <span />
+    </S.Label>
   )
 }
 

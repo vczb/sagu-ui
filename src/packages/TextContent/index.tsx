@@ -8,19 +8,26 @@ type HTMLProps =
 export type TextContentProps = {
   value: string
   tag?: 'p' | 'span'
-  size?: 'small' | 'medium'
+  size?: 'small' | 'medium' | 'large'
+  disabled?: boolean
 } & HTMLProps
 
-const TextContent = ({ value, tag, size, ...props }: TextContentProps) => {
+const TextContent = ({
+  value,
+  tag,
+  size,
+  disabled = false,
+  ...props
+}: TextContentProps) => {
   if (tag === 'p')
     return (
-      <S.Paragraph size={size} {...props}>
+      <S.Paragraph size={size} disabled={disabled} {...props}>
         {value}
       </S.Paragraph>
     )
 
   return (
-    <S.Span size={size} {...props}>
+    <S.Span size={size} disabled={disabled} {...props}>
       {value}
     </S.Span>
   )

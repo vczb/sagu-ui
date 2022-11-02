@@ -5,44 +5,34 @@ import Switch, { SwitchProps } from '.'
 export default {
   title: 'Switch',
   component: Switch,
-  args: {}
+  args: {},
+  argTypes: {
+    colors: {
+      control: false
+    }
+  }
 } as Meta
 
 export const Default: Story<SwitchProps> = (args) => {
-  return (
-    <>
-      <p>Switch without text</p>
-      <Switch {...args} />
-      <br />
-      <p>Switch with text</p>
-      <Switch {...args} label="Dark mode?" />
-      <br />
-      <p>Switch with defaultValue</p>
-      <Switch {...args} label="Dark mode?" defaultChecked />
-      <br />
-    </>
-  )
+  return <Switch {...args} />
 }
 
-export const DisabledSwitch: Story<SwitchProps> = (args) => {
-  return (
-    <>
-      <p>Disabled Switch without text</p>
-      <Switch {...args} disabled />
-      <br />
-      <p>Disabled Switch with text</p>
-      <Switch {...args} label="Dark mode?" disabled />
-      <br />
-      <p>Disabled Switch with defaultValue</p>
-      <Switch {...args} label="Dark mode?" defaultChecked disabled />
-      <br />
-    </>
-  )
+export const DefaultChecked: Story<SwitchProps> = (args) => {
+  return <Switch {...args} defaultChecked />
 }
 
-export const CustomizedColorSwitch: Story<SwitchProps> = (args) => {
+export const Disabled: Story<SwitchProps> = (args) => {
+  return <Switch {...args} disabled />
+}
+
+export const Customized: Story<SwitchProps> = (args) => {
   return (
-    <>
+    <div
+      style={{
+        display: 'grid',
+        gridGap: '10px'
+      }}
+    >
       <p>Switch without text</p>
       <Switch
         {...args}
@@ -64,6 +54,6 @@ export const CustomizedColorSwitch: Story<SwitchProps> = (args) => {
         colors={{ dot: 'green', bgChecked: 'purple', bgUnchecked: 'hotpink' }}
       />
       <br />
-    </>
+    </div>
   )
 }
