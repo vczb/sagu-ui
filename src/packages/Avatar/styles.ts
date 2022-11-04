@@ -1,5 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { AvatarProps } from '.'
+import { placeholder } from '../../animations'
 
 const variantShape = {
   circle: () => css`
@@ -25,7 +26,7 @@ export const Wrapper = styled.div<Pick<AvatarProps, 'size' | 'variant'>>`
     position: relative;
     display: inline-flex;
     color: ${theme.colors.base.white};
-    background-color: ${theme.colors.neutral.dark};
+    ${placeholder}
     ${!!variant && variantShape[variant](theme)}}
   `}
 `
