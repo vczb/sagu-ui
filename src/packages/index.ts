@@ -25,4 +25,4 @@ export { default as Alert } from './Alert'
 export { default as Breadcrumb } from './Breadcrumb'
 export { default as Skeleton } from './Skeleton'
 export { default as Switch } from './Switch'
-export { default as Pagination } from './Pagination'
+// export { default as Pagination } from './Pagination' TODO: review pagination styles and logic
