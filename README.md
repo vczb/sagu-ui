@@ -140,6 +140,8 @@ import './styles.css'
 <Button className="button-green">My Button</Button>
 ```
 
+## Examples
+
 Take a look at some [examples](./EXAMPLES.md) using [Sagu-UI](https://www.npmjs.com/package/sagu-ui)
 
 ## Contributing
