@@ -91,7 +91,7 @@ export const CustomWrapper = styled.div`
 
 ## Component customization
 
-You have to many ways to customize the Sagu components
+You have too many ways to customize the Sagu components
 
 **Using styled-components**
 
