@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
+import { TextFieldProps } from './index'
 
-export const TextField = styled.input`
-  ${({ theme }) => css`
+export const TextField = styled.input<Pick<TextFieldProps, 'label'>>`
+  ${({ theme, label }) => css`
     background: ${theme.colors.base.white};
     border-radius: ${theme.border.xxsmall};
     border: 0.2rem solid ${theme.colors.primary.lighter};
@@ -14,7 +15,7 @@ export const TextField = styled.input`
     outline: none;
     height: 100%;
     letter-spacing: 0.1rem;
-    padding: 1.5rem 2.2rem 0 1.5rem;
+    padding: ${label ? '1.5rem 2.2rem 0 1.5rem' : '0 2.2rem 0 1.5rem'};
     &::placeholder {
       color: ${theme.colors.primary.medium};
     }
