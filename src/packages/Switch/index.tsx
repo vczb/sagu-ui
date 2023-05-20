@@ -16,6 +16,7 @@ export type SwitchProps = {
   disabled?: boolean
   onSwitch?: (event: ChangeEvent<HTMLInputElement>) => void
   size?: 'small' | 'medium' | 'large'
+  name?: string
 }
 
 const Switch = ({
@@ -25,6 +26,7 @@ const Switch = ({
   defaultChecked = false,
   disabled = false,
   size = 'medium',
+  name,
   onSwitch
 }: SwitchProps) => {
   return (
@@ -40,6 +42,7 @@ const Switch = ({
         onChange={onSwitch}
         disabled={disabled}
         spanSize={size}
+        name={name}
       />
       <span />
     </S.Label>
