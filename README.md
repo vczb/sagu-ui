@@ -16,7 +16,7 @@ To install it, run:
   yarn add sagu-ui
 ```
 
-_styled-components are required_
+_[styled-components](https://github.com/styled-components/styled-components) package is required_
 
 ## Usage
 
