@@ -1,15 +1,28 @@
-import styled, { css } from 'styled-components'
+import styled, { DefaultTheme, css } from 'styled-components'
 import { TextContentProps } from '.'
 
-export const Paragraph = styled.p<Pick<TextContentProps, 'size' | 'disabled'>>`
-  ${({ theme, disabled = false, size = 'small' }) => css`
+const colorModifier = {
+  white: (theme: DefaultTheme) => css`
+    color: ${theme.colors.base.white};
+  `,
+  black: (theme: DefaultTheme) => css`
+    color: ${theme.colors.base.black};
+  `,
+  primary: (theme: DefaultTheme) => css`
+    color: ${theme.colors.primary.medium};
+  `,
+  secondary: (theme: DefaultTheme) => css`
+    color: ${theme.colors.secondary.medium};
+  `
+}
+
+export const Text = styled.p<
+  Pick<TextContentProps, 'size' | 'disabled' | 'color'>
+>`
+  ${({ theme, disabled = false, size = 'small', color = 'black' }) => css`
     font-size: ${theme.font.sizes[size]};
-    color: ${disabled ? theme.colors.base.disabled : theme.colors.base.black};
-  `}
-`
-export const Span = styled.span<Pick<TextContentProps, 'size' | 'disabled'>>`
-  ${({ theme, disabled = false, size = 'small' }) => css`
-    font-size: ${theme.font.sizes[size]};
-    color: ${disabled ? theme.colors.base.disabled : theme.colors.base.black};
+    ${disabled
+      ? `color: ${theme.colors.base.disabled};`
+      : colorModifier[color](theme)};
   `}
 `
