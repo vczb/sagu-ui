@@ -34,6 +34,7 @@ export default {
   },
   colors,
   spacings: {
+    none: '0',
     xmini: '0.2rem',
     mini: '0.4rem',
     xxsmall: '0.8rem',

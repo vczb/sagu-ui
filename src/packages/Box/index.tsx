@@ -1,9 +1,11 @@
 import React, { BaseHTMLAttributes } from 'react'
 import * as S from './styles'
+import { SpacingKeys } from '../../utils/spacingModifier'
 
 export type BoxProps = {
   children?: React.ReactNode | React.ReactNode[] | string | number
-  padding?: 'none' | 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large'
+  padding?: SpacingKeys
+  gap?: SpacingKeys
   border?: boolean
   shadow?: boolean
   flex?: 'column' | 'row' | 'block' | 'none'
@@ -15,7 +17,6 @@ export type BoxProps = {
     | 'end'
     | 'start'
   alignment?: 'normal' | 'baseline' | 'center' | 'end' | 'start'
-  gap?: 'none' | 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large'
   fullWidth?: boolean
 } & BaseHTMLAttributes<HTMLDivElement>
 

@@ -1,29 +1,6 @@
-import styled, { DefaultTheme, css } from 'styled-components'
+import styled, { css } from 'styled-components'
 import { BoxProps } from '.'
-
-type AttributeProps = 'padding' | 'gap'
-
-const wrapperModifier = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  none: (_: unknown, attribute: AttributeProps) => css`
-    ${attribute}:none;
-  `,
-  xxsmall: (theme: DefaultTheme, attribute: AttributeProps) => css`
-    ${attribute}: ${theme.spacings.xxsmall};
-  `,
-  xsmall: (theme: DefaultTheme, attribute: AttributeProps) => css`
-    ${attribute}: ${theme.spacings.xsmall};
-  `,
-  small: (theme: DefaultTheme, attribute: AttributeProps) => css`
-    ${attribute}: ${theme.spacings.small};
-  `,
-  medium: (theme: DefaultTheme, attribute: AttributeProps) => css`
-    ${attribute}: ${theme.spacings.medium};
-  `,
-  large: (theme: DefaultTheme, attribute: AttributeProps) => css`
-    ${attribute}: ${theme.spacings.large};
-  `
-}
+import { spacingModifier } from '../../utils/spacingModifier'
 
 const flexModifier = {
   row: () => css`
@@ -49,7 +26,7 @@ export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
     border,
     shadow,
     flex = 'block',
-    gap = 'none',
+    gap = 'small',
     justify,
     alignment,
     fullWidth
@@ -62,9 +39,8 @@ export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
     justify-content: ${justify};
     z-index: ${theme.layers.menu};
     background: ${theme.colors.base.white};
-
     ${flexModifier[flex]()}
-    ${wrapperModifier[padding](theme, 'padding')}
-    ${wrapperModifier[gap](theme, 'gap')}
+    ${spacingModifier[padding](theme, 'padding')}
+    ${spacingModifier[gap](theme, 'gap')}
   `}
 `
