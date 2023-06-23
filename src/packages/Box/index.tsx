@@ -8,6 +8,7 @@ export type BoxProps = {
   gap?: SpacingKeys
   border?: boolean
   shadow?: boolean
+  variant?: 'default' | 'filled' | 'transparent'
   flex?: 'column' | 'row' | 'block' | 'none'
   justify?:
     | 'space-evenly'
@@ -30,6 +31,7 @@ const Box = ({
   justify,
   alignment,
   fullWidth,
+  variant,
   ...props
 }: BoxProps) => (
   <S.Wrapper
@@ -41,6 +43,7 @@ const Box = ({
     justify={justify}
     alignment={alignment}
     fullWidth={fullWidth}
+    variant={variant}
     {...props}
   >
     {children}

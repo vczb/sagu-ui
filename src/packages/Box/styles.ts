@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { DefaultTheme, css } from 'styled-components'
 import { BoxProps } from '.'
 import { spacingModifier } from '../../utils/spacingModifier'
 
@@ -19,6 +19,18 @@ const flexModifier = {
   `
 }
 
+const wrapperModifier = {
+  default: (theme: DefaultTheme) => css`
+    background: ${theme.colors.base.white};
+  `,
+  filled: (theme: DefaultTheme) => css`
+    background: ${theme.colors.primary.medium};
+  `,
+  transparent: () => css`
+    background: transparent;
+  `
+}
+
 export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
   ${({
     theme,
@@ -29,7 +41,8 @@ export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
     gap = 'small',
     justify,
     alignment,
-    fullWidth
+    fullWidth,
+    variant = 'default'
   }) => css`
     ${!!shadow && ` box-shadow: ${theme.shadows.default};`};
     ${!!border && `border: 0.2rem solid ${theme.colors.secondary.light};`};
@@ -38,7 +51,7 @@ export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
     align-items: ${alignment};
     justify-content: ${justify};
     z-index: ${theme.layers.menu};
-    background: ${theme.colors.base.white};
+    ${wrapperModifier[variant](theme)}
     ${flexModifier[flex]()}
     ${spacingModifier[padding](theme, 'padding')}
     ${spacingModifier[gap](theme, 'gap')}
