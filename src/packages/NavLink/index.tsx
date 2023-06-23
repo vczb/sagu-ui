@@ -6,17 +6,26 @@ import * as S from './styles'
 export type NavLinkProps = {
   children: React.ReactNode | string
   active?: boolean
+  disabled?: boolean
   size: 'small' | 'medium' | 'large'
   padding?: SpacingKeys
 } & AnchorHTMLAttributes<HTMLAnchorElement>
 const NavLink = ({
   children,
   active = false,
+  disabled = false,
   size = 'medium',
   padding,
   ...props
 }: NavLinkProps) => (
-  <S.NavLink active={active} size={size} padding={padding} {...props}>
+  <S.NavLink
+    aria-disabled={disabled}
+    active={active}
+    size={size}
+    padding={padding}
+    disabled={disabled}
+    {...props}
+  >
     {children}
   </S.NavLink>
 )

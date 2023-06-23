@@ -18,7 +18,7 @@ export type BreadcrumbProps = {
 const Breadcrumb = ({
   separator = '/',
   items,
-  padding = 'xmini',
+  padding = 'mini',
   size = 'small'
 }: BreadcrumbProps) => {
   if (!items) return null
@@ -41,11 +41,11 @@ const Breadcrumb = ({
           >
             <NavLink
               active={index === items.length - 1}
+              disabled={index === items.length - 1}
               title={item.name}
               size={size}
-              href={item.link}
+              href={index !== items.length - 1 ? item.link : undefined}
               padding={padding}
-              disabled={true}
             >
               {item.name}
             </NavLink>

@@ -3,11 +3,11 @@ import { NavLinkProps } from '.'
 import { spacingModifier } from '../../utils/spacingModifier'
 
 export const NavLink = styled.a<
-  Pick<NavLinkProps, 'active' | 'size' | 'padding'>
+  Pick<NavLinkProps, 'active' | 'size' | 'padding' | 'disabled'>
 >`
-  ${({ theme, active, size, padding = 'xsmall' }) => css`
+  ${({ theme, active, size, padding = 'xsmall', disabled }) => css`
     position: relative;
-    cursor: pointer;
+    cursor: ${disabled ? 'default' : 'pointer'};
     font-family: ${theme.font.family.primary};
     font-size: ${theme.font.sizes[size]};
     font-weight: ${theme.font.weights.regular};
