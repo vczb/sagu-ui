@@ -8,7 +8,7 @@ export default {
 } as Meta
 
 export const Default: Story<GridMainProps> = (args) => (
-  <GridMain {...args}>
+  <GridMain {...args} size="mini">
     <h1>CHILDREN</h1>
   </GridMain>
 )

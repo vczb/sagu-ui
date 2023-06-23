@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 import { GridMainProps } from '.'
 
-export const Wrapper = styled.main<Pick<GridMainProps, 'size'>>`
-  ${({ theme, size = 'medium' }) => css`
+export const Wrapper = styled.main<Pick<GridMainProps, 'size' | 'minHeight'>>`
+  ${({ theme, size = 'medium', minHeight }) => css`
     display: grid;
     grid-template-columns:
       1fr min(
@@ -11,7 +11,7 @@ export const Wrapper = styled.main<Pick<GridMainProps, 'size'>>`
       )
       1fr;
     grid-column-gap: ${theme.container.gutter};
-    min-height: 70vh;
+    min-height: ${minHeight};
 
     & > * {
       grid-column: 2;

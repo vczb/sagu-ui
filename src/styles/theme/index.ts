@@ -2,6 +2,7 @@ import colors from './colors'
 
 export default {
   container: {
+    mini: '30rem',
     small: '60rem',
     medium: '130rem',
     gutter: '3.2rem'
