@@ -1,4 +1,5 @@
-import React, { BaseHTMLAttributes, useRef } from 'react'
+import React from 'react'
+import Box, { BoxProps } from '../Box'
 
 import * as S from './styles'
 
@@ -6,25 +7,20 @@ export type PaperProps = {
   placement: 'bottom' | 'left' | 'right'
   active?: boolean
   children: React.ReactNode
-} & BaseHTMLAttributes<HTMLDivElement>
+} & BoxProps
 
 const Paper = ({
   children,
   active,
   placement = 'bottom',
+  padding = 'none',
   ...props
 }: PaperProps) => {
-  const ref = useRef<HTMLDivElement>(null)
-
   return (
-    <S.Paper
-      ref={ref}
-      aria-hidden={!active}
-      active={active}
-      placement={placement}
-      {...props}
-    >
-      {children}
+    <S.Paper aria-hidden={!active} active={active} placement={placement}>
+      <Box {...props} shadow border padding={padding}>
+        {children}
+      </Box>
     </S.Paper>
   )
 }

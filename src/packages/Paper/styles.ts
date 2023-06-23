@@ -19,13 +19,10 @@ const paperModifiers = {
 export const Paper = styled.div<Pick<PaperProps, 'active' | 'placement'>>`
   ${({ theme, active, placement }) => css`
     position: absolute;
-    box-shadow: ${theme.shadows.default};
-    border: 0.2rem solid ${theme.colors.secondary.light};
     display: ${active ? 'block' : 'none'};
     width: fit-content;
     height: fit-content;
     z-index: ${theme.layers.menu};
-    background: ${theme.colors.base.white};
     ${paperModifiers[placement](theme)}
   `}
 `
