@@ -1,5 +1,6 @@
 export { default as Accordion } from './Accordion'
 export { default as Button } from './Button'
+export { default as Box } from './Box'
 export { default as CheckBox } from './CheckBox'
 export { default as Radio } from './Radio'
 export { default as Label } from './Label'
