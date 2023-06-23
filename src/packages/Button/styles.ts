@@ -43,7 +43,7 @@ const buttonVariants = {
 export const Button = styled.button<
   Pick<ButtonProps, 'variant' | 'outline' | 'size' | 'padding'>
 >`
-  ${({ theme, variant, outline, size = 'small', padding = 'xsmall' }) => css`
+  ${({ theme, variant, outline, size = 'small', padding = 'xxsmall' }) => css`
     cursor: pointer;
     border: ${outline ? '0.2rem solid' : 'none'} ;
     background-color: transparent;
