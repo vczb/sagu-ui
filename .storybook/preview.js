@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import theme from '../src/styles/theme'
+import { wine } from '../src/styles/theme/wine'
 import GlobalStyles from '../src/styles/global'
 
 export const parameters = {
@@ -13,9 +14,12 @@ export const parameters = {
 }
 
 export const decorators = [
-  (Story, context) => (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Story/>
-    </ThemeProvider>
-  )]
+  (Story, context) => {
+    // Object.assign(theme.colors, wine)
+    return (
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Story/>
+      </ThemeProvider>
+    )
+  }]
