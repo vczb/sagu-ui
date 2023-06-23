@@ -1,5 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from '.'
+import { spacingModifier } from '../../utils/spacingModifier'
 
 const buttonVariants = {
   primary: (theme: DefaultTheme) => css`
@@ -40,17 +41,17 @@ const buttonVariants = {
 }
 
 export const Button = styled.button<
-  Pick<ButtonProps, 'variant' | 'outline' | 'size'>
+  Pick<ButtonProps, 'variant' | 'outline' | 'size' | 'padding'>
 >`
-  ${({ theme, variant, outline, size = 'small' }) => css`
+  ${({ theme, variant, outline, size = 'small', padding = 'xsmall' }) => css`
     cursor: pointer;
     border: ${outline ? '0.2rem solid' : 'none'} ;
     background-color: transparent;
     font-weight: ${theme.font.weights.bold};
     border-radius: ${theme.border.radius};
     transition: ${theme.transitions.default};
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes[size]};
+    ${spacingModifier[padding](theme, 'padding')}
     ${!!variant && buttonVariants[variant](theme)}}
   `}
 `

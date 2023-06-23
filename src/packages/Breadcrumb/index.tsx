@@ -1,5 +1,6 @@
 import React from 'react'
 import NavLink, { NavLinkProps } from '../NavLink'
+import { SpacingKeys } from '../../utils/spacingModifier'
 import * as S from './styles'
 
 type BreadcrumbItem = {
@@ -10,12 +11,14 @@ type BreadcrumbItem = {
 export type BreadcrumbProps = {
   separator?: string
   items: BreadcrumbItem[]
+  padding?: SpacingKeys
   size?: NavLinkProps['size']
 }
 
 const Breadcrumb = ({
   separator = '/',
   items,
+  padding = 'xmini',
   size = 'small'
 }: BreadcrumbProps) => {
   if (!items) return null
@@ -41,6 +44,8 @@ const Breadcrumb = ({
               title={item.name}
               size={size}
               href={item.link}
+              padding={padding}
+              disabled={true}
             >
               {item.name}
             </NavLink>

@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import { BreadcrumbProps } from '.'
-import * as NavLinkStyles from '../NavLink/styles'
 
 export const Breadcrumb = styled.ul`
   display: flex;
@@ -15,8 +14,5 @@ export const BreadcrumbItem = styled.li<Pick<BreadcrumbProps, 'size'>>`
     color: ${theme.colors.primary.medium};
     font-family: ${theme.font.family.primary};
     font-size: ${theme.font.sizes[size]};
-    ${NavLinkStyles.NavLink} {
-      padding: ${theme.spacings.mini} 0;
-    }
   `}
 `

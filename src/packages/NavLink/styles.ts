@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components'
 import { NavLinkProps } from '.'
+import { spacingModifier } from '../../utils/spacingModifier'
 
-export const NavLink = styled.a<Pick<NavLinkProps, 'active' | 'size'>>`
-  ${({ theme, active, size }) => css`
+export const NavLink = styled.a<
+  Pick<NavLinkProps, 'active' | 'size' | 'padding'>
+>`
+  ${({ theme, active, size, padding = 'xsmall' }) => css`
     position: relative;
     cursor: pointer;
     font-family: ${theme.font.family.primary};
@@ -12,7 +15,7 @@ export const NavLink = styled.a<Pick<NavLinkProps, 'active' | 'size'>>`
       ? theme.colors.secondary.medium
       : theme.colors.primary.medium};
     transition: ${theme.transitions.default};
-    padding: ${theme.spacings.xsmall};
+    ${spacingModifier[padding](theme, 'padding')}
     text-decoration: none;
     &:hover {
       color: ${theme.colors.secondary.medium};
