@@ -1,3 +1,5 @@
+import { ocean } from './ocean'
+
 export const base = {
   white: '#F8F7FB',
   black: '#222222',
@@ -8,19 +10,9 @@ export const base = {
   success: '#4caf50'
 }
 
-export const primary = {
-  lighter: '#E8EFF5',
-  light: '#1C5D9F',
-  medium: '#022B54',
-  dark: '#01172E'
-}
+export const primary = ocean.primary
 
-export const secondary = {
-  lighter: '#D1EFF2',
-  light: '#A3DFE6',
-  medium: '#53C3D0',
-  dark: '#34AEBC'
-}
+export const secondary = ocean.secondary
 
 export const neutral = {
   lightest: '#F4F4F9',
