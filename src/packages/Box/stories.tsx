@@ -12,3 +12,13 @@ export const Default: Story = (args) => (
     <>hello</>
   </Box>
 )
+
+export const MultipleChildren: Story = (args) => (
+  <Box {...args}>
+    <div>hello</div>
+    <div>World</div>
+    <div>Welcome</div>
+    <div>to</div>
+    <div>Sagu-ui</div>
+  </Box>
+)
