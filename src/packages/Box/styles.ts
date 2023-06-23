@@ -25,16 +25,45 @@ const wrapperModifier = {
   `
 }
 
+const flexModifier = {
+  row: () => css`
+    display: flex;
+    flex-direction: row;
+  `,
+  column: () => css`
+    display: flex;
+    flex-direction: column;
+  `,
+  block: () => css`
+    display: block;
+  `,
+  none: () => css`
+    display: none;
+  `
+}
+
 export const Wrapper = styled.div<Omit<BoxProps, 'children'>>`
-  ${({ theme, padding = 'small', border, shadow, flex, gap = 'none' }) => css`
+  ${({
+    theme,
+    padding = 'small',
+    border,
+    shadow,
+    flex = 'block',
+    gap = 'none',
+    justify,
+    alignment,
+    fullWidth
+  }) => css`
     ${!!shadow && ` box-shadow: ${theme.shadows.default};`};
     ${!!border && `border: 0.2rem solid ${theme.colors.secondary.light};`};
-    width: fit-content;
+    width: ${fullWidth ? '100%' : 'fit-content'};
     height: fit-content;
-    ${flex ? 'display: flex;' : 'display: block;'};
-    flex-direction: ${flex === 'column' ? 'column;' : 'row;'};
+    align-items: ${alignment};
+    justify-content: ${justify};
     z-index: ${theme.layers.menu};
     background: ${theme.colors.base.white};
+
+    ${flexModifier[flex]()}
     ${wrapperModifier[padding](theme, 'padding')}
     ${wrapperModifier[gap](theme, 'gap')}
   `}

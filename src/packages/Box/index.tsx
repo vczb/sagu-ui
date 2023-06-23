@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { BaseHTMLAttributes } from 'react'
 import * as S from './styles'
 
 export type BoxProps = {
@@ -6,17 +6,30 @@ export type BoxProps = {
   padding?: 'none' | 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large'
   border?: boolean
   shadow?: boolean
-  flex?: 'column' | 'row'
+  flex?: 'column' | 'row' | 'block' | 'none'
+  justify?:
+    | 'space-evenly'
+    | 'space-between'
+    | 'space-around'
+    | 'center'
+    | 'end'
+    | 'start'
+  alignment?: 'normal' | 'baseline' | 'center' | 'end' | 'start'
   gap?: 'none' | 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large'
-}
+  fullWidth?: boolean
+} & BaseHTMLAttributes<HTMLDivElement>
 
 const Box = ({
   children,
   padding,
-  border,
-  shadow = true,
+  border = false,
+  shadow = false,
   flex,
-  gap
+  gap,
+  justify,
+  alignment,
+  fullWidth,
+  ...props
 }: BoxProps) => (
   <S.Wrapper
     padding={padding}
@@ -24,6 +37,10 @@ const Box = ({
     shadow={shadow}
     flex={flex}
     gap={gap}
+    justify={justify}
+    alignment={alignment}
+    fullWidth={fullWidth}
+    {...props}
   >
     {children}
   </S.Wrapper>

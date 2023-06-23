@@ -14,7 +14,15 @@ export const Default: Story = (args) => (
 )
 
 export const MultipleChildren: Story = (args) => (
-  <Box {...args}>
+  <Box
+    border={true}
+    shadow={true}
+    padding="medium"
+    flex="column"
+    gap="small"
+    fullWidth
+    {...args}
+  >
     <div>hello</div>
     <div>World</div>
     <div>Welcome</div>
