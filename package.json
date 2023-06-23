@@ -9,14 +9,17 @@
   },
   "main": "lib/index.js",
   "types": "lib",
+  "engines": {
+    "node": "18.16.0"
+  },
   "scripts": {
     "build": "tsc -p .",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prettier:format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "prettier:check": "prettier -c \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "sb": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "sb": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "test": "jest --passWithNoTests"
   },

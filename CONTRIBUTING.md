@@ -1,60 +1,86 @@
-# What do I need to know to help?
+# Contributing Guidelines
 
-If you are looking to help with a code contribution, our project uses Typescript. When contributing to this repository, please feel free to discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+Thank you for your interest in contributing to our React Library project! We welcome contributions from the community. To ensure a smooth and collaborative process, please follow the guidelines below.
 
-## How do I make a contribution?
+## Prerequisites
 
-If you've never made an open source contribution before or you are wondering how contributions work in our project? Here's a quick rundown!
+- Node.js version 18.16.0 is required to work on this project.
 
-1. Fork the [repository](https://github.com/vczb/sagu-ui) to your account. This means that you will have a copy of the repository under `<your-GitHub-username>/<repository-name>`.
-2. Clone the repository to your local machine using by copying the link provided under `HTTPS` when you click on the green button labeled `code` on the repository page
+## Getting Started
 
-    ```sh
-    $ git clone https://github.com/<your-GitHub-username>/sagu-ui.git
-    ```
+To contribute to the project, follow these steps:
 
-4. Create a new branch for your changes or fix 
+1. Fork the repository by clicking on the "Fork" button at the top right corner of the repository page. This creates a copy of the repository in your GitHub account.
 
-    ```sh
-     $ git checkout -b <branch-name>
-    ```
+2. Clone the repository to your local machine using Git. Replace `<your-username>` with your GitHub username:
 
-5. Setup the project in your local by following the steps listed in the [README.md](https://github.com/vczb/sagu-ui/blob/main/README.md) file.
-6. Open the project in a code editor and begin working on it.
-7. Add the contents of the changed files to the "snapshot" git uses to manage the state of the project, also known as the index
+```bash
+$ git clone https://github.com/<your-username>/sagu-ui.git
+```
 
-    ```sh
-    $ git add .
-    ```
+3. Change to the project's directory:
 
-8. Add a descriptive commit message
+```bash
+$ cd sagu-ui
+```
 
-    ```sh
-    $ git commit -m "Insert a short message of the changes made here"
-    ```
+4. Install the project dependencies:
 
-9. Push the changes to the remote repository
+```bash
+$ yarn install
+```
 
-    ```sh
-    $ git push -u origin <branch-name>
-    ```
+5. Create a new branch for your changes:
 
-10. Submit a pull request to the upstream repository.
-11. Title the pull request with a short description of the changes you made and **request a review from a maintainer/reviewer**. For example, you can title an issue like so "Added A New React UI Feature". In the description of the pull request, be sure to explain the changes that you made and any questions you have for the maintainer. It's OK if your pull request is not perfect (no pull request is), the reviewer will be able to help you fix any problems and improve it!
-12. Wait for the pull request to be reviewed by a maintainer.
-13. Make changes to the pull request if the reviewing maintainer recommends them.
-14. Celebrate your success after your pull request is merged! 🎉
+```bash
+$ git checkout -b my-feature
+```
 
-## Reviewer/Maintainers
+6. Make your desired changes to the codebase using your favorite code editor.
 
-  **GitHub**: [Vinicius Zucatti](https://github.com/vczb) <br>
-  **Twitter**: [Vinicius Zucatti](https://twitter.com/viniciuszucatti) <br>
-  **Email**: viniciuszucatti@gmail.com
+7. Run the project locally to test your changes:
 
-## Where can I go for help?
-- If you need help, you can ask questions directly in the pull request or issue. You can tag the reviewers/maintainers by typing '@' followed by their github username or just select from the dropdown option provided. 
+```bash
+$ yarn sb
+```
 
-## What does the Code of Conduct mean for me?
-- Our [Code of Conduct](https://github.com/vczb/sagu-ui/blob/main/CODE_OF_CONDUCT.md) means that you are responsible for treating everyone on the project with respect and courtesy regardless of their identity. If you are the victim of any inappropriate behavior or comments as described in our Code of Conduct, we are here for you and will do the best to ensure that the abuser is reprimanded appropriately, per our code.
+8. Write tests for your changes.
 
-### Note: Portions of this `CONTRIBUTING.md` file are based off of Safia Abdalla's [A template for creating open source contributor guidelines](https://opensource.com/life/16/3/contributor-guidelines-template-and-tips)
+```bash
+$ yarn test
+$ yarn typecheck
+$ yarn prettier:check
+```
+
+9. Commit your changes with a descriptive commit message:
+
+```bash
+$ git commit -m "Add new feature: XYZ"
+```
+
+10. Push your changes to your forked repository:
+
+```
+$ git push origin my-feature
+```
+
+11. Open a pull request from your forked repository to the original repository. Provide a clear title and description for your pull request, explaining the changes you've made.
+
+12. Engage in the review process, addressing any feedback or requested changes.
+
+13. Once your pull request is approved and passes all necessary checks, it will be merged into the main branch.
+
+## Code Style and Guidelines
+
+- Follow the established code style and guidelines of the project.
+- Write clear, concise, and well-documented code.
+- Ensure your code adheres to the project's linting rules.
+- Avoid more them 1 commit per PR
+
+## Thank You
+
+We appreciate your contribution to our React Library project! Your effort helps improve the library for everyone in the community. Thank you for your support!
+
+Please note that by contributing to this project, you agree to abide by the [Code of Conduct](https://github.com/<your-username>/sagu-ui/blob/main/CODE_OF_CONDUCT.md).
+
+Happy coding!
