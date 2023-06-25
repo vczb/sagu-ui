@@ -1,6 +1,6 @@
 import React from 'react'
 import { AnchorHTMLAttributes } from 'react'
-import { SpacingKeys } from '../../utils/spacingModifier'
+import { SpacingKeys } from '../../styles/spacingModifier'
 import * as S from './styles'
 
 export type NavLinkProps = {

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { NavLinkProps } from '.'
-import { spacingModifier } from '../../utils/spacingModifier'
+import { spacingModifier } from '../../styles/spacingModifier'
 
 export const NavLink = styled.a<
   Pick<NavLinkProps, 'active' | 'size' | 'padding' | 'disabled'>

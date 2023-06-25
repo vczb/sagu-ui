@@ -1,6 +1,6 @@
 import styled, { DefaultTheme, css } from 'styled-components'
 import { BoxProps } from '.'
-import { spacingModifier } from '../../utils/spacingModifier'
+import { spacingModifier } from '../../styles/spacingModifier'
 
 const flexModifier = {
   row: () => css`
