@@ -1,6 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from '.'
-import { spacingModifier } from '../../utils/spacingModifier'
+import { spacingModifier } from '../../styles/spacingModifier'
 
 const buttonVariants = {
   primary: (theme: DefaultTheme) => css`

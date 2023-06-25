@@ -1,6 +1,6 @@
 import React from 'react'
 import NavLink, { NavLinkProps } from '../NavLink'
-import { SpacingKeys } from '../../utils/spacingModifier'
+import { SpacingKeys } from '../../styles/spacingModifier'
 import * as S from './styles'
 
 type BreadcrumbItem = {

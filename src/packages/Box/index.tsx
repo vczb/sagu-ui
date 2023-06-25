@@ -1,6 +1,6 @@
 import React, { BaseHTMLAttributes } from 'react'
 import * as S from './styles'
-import { SpacingKeys } from '../../utils/spacingModifier'
+import { SpacingKeys } from '../../styles/spacingModifier'
 
 export type BoxProps = {
   children?: React.ReactNode | React.ReactNode[] | string | number
