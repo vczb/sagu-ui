@@ -3,7 +3,7 @@ import * as S from './styles'
 
 export type GridMainProps = {
   children: React.ReactNode
-  size?: 'medium' | 'small' | 'mini'
+  size?: 'medium' // | 'small' | 'mini' #TODO: it's not working as expected, test and fix
   minHeight?: '70vh' | '100vh' | '100%' | 'unset'
 } & BaseHTMLAttributes<HTMLDivElement>
 
