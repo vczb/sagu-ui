@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import ProgressBar, { ProgessBarProps } from '.'
 
 export default {
@@ -10,14 +10,14 @@ export default {
   }
 } as Meta
 
-export const Default: Story<ProgessBarProps> = (args) => (
+export const Default: StoryFn<ProgessBarProps> = (args) => (
   <ProgressBar {...args} />
 )
 
-export const Customized: Story<ProgessBarProps> = (args) => (
+export const Customized: StoryFn<ProgessBarProps> = (args) => (
   <ProgressBar {...args} color="#0064d6" showValue label="My progress bar" />
 )
 
-export const Indeterminate: Story<ProgessBarProps> = (args) => (
+export const Indeterminate: StoryFn<ProgessBarProps> = (args) => (
   <ProgressBar indeterminate {...args} label="Loading..." />
 )

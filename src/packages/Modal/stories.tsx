@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Button from '../Button'
 import Heading from '../Heading'
 import Modal, { ModalBody, ModalFooter, ModalHeader, ModalProps } from '.'
@@ -13,13 +13,13 @@ export default {
   argTypes: { onClose: { action: 'closed' } }
 } as Meta
 
-export const Simple: Story<ModalProps> = (args) => (
+export const Simple: StoryFn<ModalProps> = (args) => (
   <Modal {...args}>
     <ModalBody>Modal content here</ModalBody>
   </Modal>
 )
 
-export const ModalWithHeader: Story<ModalProps> = (args) => (
+export const ModalWithHeader: StoryFn<ModalProps> = (args) => (
   <Modal {...args}>
     <ModalHeader>
       <Heading>Title</Heading>
@@ -28,7 +28,7 @@ export const ModalWithHeader: Story<ModalProps> = (args) => (
   </Modal>
 )
 
-export const ModalWithFooter: Story<ModalProps> = (args) => (
+export const ModalWithFooter: StoryFn<ModalProps> = (args) => (
   <Modal {...args}>
     <ModalBody>Modal content here</ModalBody>
     <ModalFooter>
@@ -37,7 +37,7 @@ export const ModalWithFooter: Story<ModalProps> = (args) => (
   </Modal>
 )
 
-export const ModalWithHeaderFooter: Story<ModalProps> = (args) => (
+export const ModalWithHeaderFooter: StoryFn<ModalProps> = (args) => (
   <Modal {...args}>
     <ModalHeader>
       <Heading>Title</Heading>

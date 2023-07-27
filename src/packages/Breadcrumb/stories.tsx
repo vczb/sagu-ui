@@ -1,5 +1,5 @@
 import React from 'react'
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react'
 import Breadcrumb, { BreadcrumbProps } from '.'
 
 export default {
@@ -23,6 +23,6 @@ export default {
   }
 } as Meta
 
-export const Default: Story<BreadcrumbProps> = (args) => (
+export const Default: StoryFn<BreadcrumbProps> = (args) => (
   <Breadcrumb {...args} />
 )

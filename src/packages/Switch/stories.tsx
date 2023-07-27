@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Switch, { SwitchProps } from '.'
 
 export default {
@@ -13,19 +13,19 @@ export default {
   }
 } as Meta
 
-export const Default: Story<SwitchProps> = (args) => {
+export const Default: StoryFn<SwitchProps> = (args) => {
   return <Switch {...args} />
 }
 
-export const DefaultChecked: Story<SwitchProps> = (args) => {
+export const DefaultChecked: StoryFn<SwitchProps> = (args) => {
   return <Switch {...args} defaultChecked />
 }
 
-export const Disabled: Story<SwitchProps> = (args) => {
+export const Disabled: StoryFn<SwitchProps> = (args) => {
   return <Switch {...args} disabled />
 }
 
-export const Customized: Story<SwitchProps> = (args) => {
+export const Customized: StoryFn<SwitchProps> = (args) => {
   return (
     <div
       style={{

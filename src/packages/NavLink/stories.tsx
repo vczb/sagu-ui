@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import NavLink, { NavLinkProps } from '.'
 
 export default {
@@ -12,4 +12,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<NavLinkProps> = (args) => <NavLink {...args} />
+export const Default: StoryFn<NavLinkProps> = (args) => <NavLink {...args} />

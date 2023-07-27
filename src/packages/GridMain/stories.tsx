@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import GridMain, { GridMainProps } from '.'
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: GridMain
 } as Meta
 
-export const Default: Story<GridMainProps> = (args) => (
+export const Default: StoryFn<GridMainProps> = (args) => (
   <GridMain {...args} size="mini">
     <h1>CHILDREN</h1>
   </GridMain>
