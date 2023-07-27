@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Radio, { RadioProps } from '.'
 
 export default {
@@ -10,4 +10,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<RadioProps> = (args) => <Radio {...args} />
+export const Default: StoryFn<RadioProps> = (args) => <Radio {...args} />

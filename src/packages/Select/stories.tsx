@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 
 import Select, { SelectProps } from '.'
 import { mock } from './mock'
@@ -21,7 +21,7 @@ export default {
   }
 } as Meta
 
-export const Default: Story<SelectProps> = (args) => {
+export const Default: StoryFn<SelectProps> = (args) => {
   const [value, setValue] = useState('')
   const handleClick = (item: string) => {
     if (value.includes(item)) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import NumberField, { NumberFieldProps } from '.'
 
 export default {
@@ -8,6 +8,6 @@ export default {
   args: {}
 } as Meta
 
-export const Default: Story<NumberFieldProps> = (args) => (
+export const Default: StoryFn<NumberFieldProps> = (args) => (
   <NumberField {...args} />
 )

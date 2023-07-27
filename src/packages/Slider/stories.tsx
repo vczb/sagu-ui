@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Slider, { SliderProps } from '.'
 import { mock } from './mock'
 
@@ -11,8 +11,8 @@ export default {
   }
 } as Meta
 
-export const Default: Story<SliderProps> = (args) => <Slider {...args} />
+export const Default: StoryFn<SliderProps> = (args) => <Slider {...args} />
 
-export const OneImageOnly: Story<SliderProps> = (args) => (
+export const OneImageOnly: StoryFn<SliderProps> = (args) => (
   <Slider {...args} images={[mock[0]]} />
 )

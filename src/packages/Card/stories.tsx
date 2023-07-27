@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Card, { CardProps } from '.'
 
 import { mock as imgMock } from '../Slider/mock'
@@ -17,4 +17,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<CardProps> = (args) => <Card {...args} />
+export const Default: StoryFn<CardProps> = (args) => <Card {...args} />

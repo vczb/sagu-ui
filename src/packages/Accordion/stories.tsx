@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Accordion from '.'
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: Accordion
 } as Meta
 
-export const Default: Story = () => (
+export const Default: StoryFn = () => (
   <Accordion title={'Accordion'}>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Box from '.'
 
 export default {
@@ -7,13 +7,13 @@ export default {
   component: Box
 } as Meta
 
-export const Default: Story = (args) => (
+export const Default: StoryFn = (args) => (
   <Box {...args}>
     <>hello</>
   </Box>
 )
 
-export const MultipleChildren: Story = (args) => (
+export const MultipleChildren: StoryFn = (args) => (
   <Box
     border={true}
     shadow={true}

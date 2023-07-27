@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import TextContent, { TextContentProps } from '.'
 
 export default {
@@ -10,6 +10,6 @@ export default {
   }
 } as Meta
 
-export const Default: Story<TextContentProps> = (args) => (
+export const Default: StoryFn<TextContentProps> = (args) => (
   <TextContent {...args} />
 )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Skeleton, { SkeletonProps, SkeletonVariant } from '.'
 
 export default {
@@ -8,7 +8,7 @@ export default {
   args: {}
 } as Meta
 
-export const Text: Story<SkeletonProps> = (args) => {
+export const Text: StoryFn<SkeletonProps> = (args) => {
   return (
     <div>
       Skeleton Text
@@ -36,7 +36,7 @@ export const Text: Story<SkeletonProps> = (args) => {
   )
 }
 
-export const Circular: Story<SkeletonProps> = (args) => {
+export const Circular: StoryFn<SkeletonProps> = (args) => {
   return (
     <div>
       Skeleton Circular with an 150x150 image inside
@@ -56,7 +56,7 @@ export const Circular: Story<SkeletonProps> = (args) => {
   )
 }
 
-export const Rectangular: Story<SkeletonProps> = (args) => {
+export const Rectangular: StoryFn<SkeletonProps> = (args) => {
   return (
     <div>
       Skeleton Rectangular
@@ -88,7 +88,7 @@ export const Rectangular: Story<SkeletonProps> = (args) => {
   )
 }
 
-export const Rounded: Story<SkeletonProps> = (args) => {
+export const Rounded: StoryFn<SkeletonProps> = (args) => {
   return (
     <div>
       Skeleton Rounded

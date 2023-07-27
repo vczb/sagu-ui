@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import { theme } from '../../styles'
 
 import Paper, { PaperProps } from '.'
@@ -13,7 +13,7 @@ export default {
   }
 } as Meta
 
-export const Default: Story<PaperProps> = (args) => (
+export const Default: StoryFn<PaperProps> = (args) => (
   <div
     style={{
       position: 'relative',

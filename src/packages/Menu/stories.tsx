@@ -1,5 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { StoryFn, Meta } from '@storybook/react'
 import Menu, { MenuProps } from '.'
 import { mock } from './mock'
 
@@ -13,6 +13,6 @@ export default {
   }
 } as Meta
 
-export const Default: Story<MenuProps> = (args) => <Menu {...args} />
+export const Default: StoryFn<MenuProps> = (args) => <Menu {...args} />
 
-export const IconMenu: Story<MenuProps> = (args) => <Menu {...args} asIcon />
+export const IconMenu: StoryFn<MenuProps> = (args) => <Menu {...args} asIcon />
