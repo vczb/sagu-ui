@@ -18,8 +18,8 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prettier:format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "prettier:check": "prettier -c \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "sb": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
-    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "sb": "NODE_OPTIONS=--openssl-legacy-provider storybook dev -p 6006",
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider storybook build",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "test": "jest --passWithNoTests"
   },
