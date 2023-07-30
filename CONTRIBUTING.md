@@ -36,15 +36,15 @@ $ yarn install
 $ git checkout -b my-feature
 ```
 
-6. Make your desired changes to the codebase using your favorite code editor.
-
-7. Run the project locally to test your changes:
+6. Run the project locally to test your changes:
 
 ```bash
 $ yarn sb
 ```
 
-8. Write tests for your changes.
+7. Make your desired changes to the codebase using your favorite code editor.
+
+8. Test your changes.
 
 ```bash
 $ yarn test
@@ -81,6 +81,6 @@ $ git push origin my-feature
 
 We appreciate your contribution to our React Library project! Your effort helps improve the library for everyone in the community. Thank you for your support!
 
-Please note that by contributing to this project, you agree to abide by the [Code of Conduct](https://github.com/<your-username>/sagu-ui/blob/main/CODE_OF_CONDUCT.md).
+Please note that by contributing to this project, you agree to abide by the [Code of Conduct](https://github.com/vczb/sagu-ui/blob/main/CODE_OF_CONDUCT.md).
 
 Happy coding!
