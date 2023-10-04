@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import NavLink, { NavLinkProps } from '../NavLink'
 import { SpacingKeys } from '../../styles/spacingModifier'
 import * as S from './styles'
@@ -26,7 +26,7 @@ const Breadcrumb = ({
   return (
     <S.Breadcrumb>
       {items.map((item, index) => (
-        <>
+        <Fragment key={index}>
           {index > 0 && (
             <S.BreadcrumbItem
               key={`breadcrumb-${separator}-${index}`}
@@ -50,7 +50,7 @@ const Breadcrumb = ({
               {item.name}
             </NavLink>
           </S.BreadcrumbItem>
-        </>
+        </Fragment>
       ))}
     </S.Breadcrumb>
   )
