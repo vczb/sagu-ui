@@ -17,7 +17,12 @@ const Paper = ({
   ...props
 }: PaperProps) => {
   return (
-    <S.Paper aria-hidden={!active} active={active} placement={placement}>
+    <S.Paper
+      aria-hidden={!active}
+      active={active}
+      placement={placement}
+      data-testid="paper"
+    >
       <Box {...props} shadow border padding={padding}>
         {children}
       </Box>
