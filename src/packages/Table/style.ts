@@ -1,5 +1,4 @@
-import styled, { css, DefaultTheme } from 'styled-components'
-import { TableProps } from '.'
+import styled, { css } from 'styled-components'
 
 export const Table = styled.table`
   ${({ theme }) => css`
