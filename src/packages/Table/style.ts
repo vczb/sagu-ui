@@ -30,6 +30,7 @@ export const TableCell = styled.td`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall};
     border: ${theme.border.mini} solid ${theme.colors.primary.dark};
+    background-color: ${theme.colors.neutral.lighter};
     text-align: center;
   `}
 `
