@@ -189,6 +189,14 @@ You can contribute to this project by opening an issue or creating a pull reques
 |   ├── theme.ts
 |   ├── provider.ts
 ```
+## Our Amazing Contributors 🌟
+Thanks for all who is contributing with us.
+
+<a href="https://github.com/vczb/sagu-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vczb/sagu-ui" />
+</a>
+
+Be part of this amazing team, [contribute](./CONTRIBUTING.md) as well
 
 ## License
 
