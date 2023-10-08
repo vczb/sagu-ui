@@ -2,7 +2,7 @@
 
 It's a simple and faster React UI
 
-## Installation
+## Installation 🛠️
 
 sagu-ui is available as an [npm package](https://www.npmjs.com/package/sagu-ui).
 
