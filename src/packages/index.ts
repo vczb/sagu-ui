@@ -27,5 +27,5 @@ export { default as Breadcrumb } from './Breadcrumb'
 export { default as Skeleton } from './Skeleton'
 export { default as Switch } from './Switch'
 export { default as Table } from './Table'
-// export { default as Pagination } from './Pagination' TODO: review pagination styles and logic
+export { default as Pagination } from './Pagination'
 
