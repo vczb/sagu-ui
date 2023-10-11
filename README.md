@@ -2,7 +2,7 @@
 
 It's a simple and faster React UI
 
-## Installation
+## Installation 🛠️
 
 sagu-ui is available as an [npm package](https://www.npmjs.com/package/sagu-ui).
 
@@ -18,7 +18,7 @@ To install it, run:
 
 _[styled-components](https://github.com/styled-components/styled-components) package is required_
 
-## Usage
+## Usage 👇
 
 Here is a quick example to get you started, **it's all you need**:
 
@@ -38,7 +38,7 @@ function App() {
 export default App
 ```
 
-## Theme customization
+## Theme customization ✒️
 
 You can easily override the values of the theme object
 
@@ -89,7 +89,7 @@ export const CustomWrapper = styled.div`
 `
 ```
 
-## Component customization
+## Component customization 🔧
 
 You have too many ways to customize the Sagu components
 
@@ -140,15 +140,15 @@ import './styles.css'
 <Button className="button-green">My Button</Button>
 ```
 
-## Examples
+## Examples ✍️
 
 Take a look at some [examples](./EXAMPLES.md) using [Sagu-UI](https://www.npmjs.com/package/sagu-ui)
 
-## Contributing
+## Contributing 🤝
 
 You can contribute to this project by opening an issue or creating a pull request.
 
-## What is inside?
+## What is inside❓
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
@@ -157,7 +157,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 - [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/)
 
-## Available commands
+## Available commands ⬇️
 
 - `build`: build the files in the `lib` directory
 - `sb`: run the storybook at the address `localhost:6006`
@@ -166,7 +166,7 @@ You can contribute to this project by opening an issue or creating a pull reques
 - `generate <Component name>`: create a component boilerplate
 - `test`: test all components
 
-## Project structure
+## Project structure 🧬
 
 ```
 /.storybook
@@ -189,7 +189,15 @@ You can contribute to this project by opening an issue or creating a pull reques
 |   ├── theme.ts
 |   ├── provider.ts
 ```
+## Our Amazing Contributors 🌟
+Thanks for all who is contributing with us.
 
-## License
+<a href="https://github.com/vczb/sagu-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vczb/sagu-ui" />
+</a>
+
+Be part of this amazing team, [contribute](./CONTRIBUTING.md) as well
+
+## License 🪪
 
 This project is licensed under the [MIT](./LICENSE) License.

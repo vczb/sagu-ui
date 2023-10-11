@@ -16,8 +16,7 @@ const mock = [
     link: '/blog/tech/react'
   }
 ]
-// TODO: Fix this test
-describe.skip('<Breadcrumb>', () => {
+describe('<Breadcrumb>', () => {
   it('Should render the breadcrumb', () => {
     const { container } = render(<Breadcrumb items={mock} />)
     expect(container).toBeInTheDocument()

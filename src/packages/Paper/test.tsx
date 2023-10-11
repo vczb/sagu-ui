@@ -4,11 +4,10 @@ import { theme } from '../../styles'
 
 import Paper from '.'
 
-// TODO: fix tests
-describe.skip('<Paper />', () => {
+describe('<Paper />', () => {
   it('Should render when active is true', () => {
     render(
-      <Paper active={true} placement="right" data-testid="paper">
+      <Paper active={true} placement="right">
         <p>Hello world!</p>
       </Paper>
     )
@@ -17,7 +16,7 @@ describe.skip('<Paper />', () => {
   })
   it('Should not render when active is false', () => {
     render(
-      <Paper active={false} placement="right" data-testid="paper">
+      <Paper active={false} placement="right">
         <p>Hello world!</p>
       </Paper>
     )
@@ -35,7 +34,7 @@ describe.skip('<Paper />', () => {
   })
   it('Should render in bottom placement', () => {
     render(
-      <Paper placement="bottom" data-testid="paper">
+      <Paper placement="bottom">
         <></>
       </Paper>
     )
@@ -47,7 +46,7 @@ describe.skip('<Paper />', () => {
   })
   it('Should render in left placement', () => {
     render(
-      <Paper placement="left" data-testid="paper">
+      <Paper placement="left">
         <></>
       </Paper>
     )
@@ -59,7 +58,7 @@ describe.skip('<Paper />', () => {
   })
   it('Should render in right placement', () => {
     render(
-      <Paper placement="right" data-testid="paper">
+      <Paper placement="right">
         <></>
       </Paper>
     )
