@@ -28,4 +28,3 @@ export { default as Skeleton } from './Skeleton'
 export { default as Switch } from './Switch'
 export { default as Table } from './Table'
 export { default as Pagination } from './Pagination'
-
