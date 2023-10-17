@@ -198,6 +198,6 @@ Thanks for all who is contributing with us.
 
 Be part of this amazing team, [contribute](./CONTRIBUTING.md) as well
 
-## License 🪪
+## License 📜
 
 This project is licensed under the [MIT](./LICENSE) License.
