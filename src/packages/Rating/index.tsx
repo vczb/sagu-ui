@@ -13,12 +13,9 @@ const Rating = ({ name, value, onChange }: RatingProps) => {
     const newValue = +event.target.value
     onChange(newValue)
     setSelectedValue(newValue)
-    console.log(value, selectedValue)
   }
   useEffect(() => {
-    console.log('useEffect', selectedValue)
   },[selectedValue])
-  console.log('rerender', selectedValue)
 
   return (
     <RatingContainer>
