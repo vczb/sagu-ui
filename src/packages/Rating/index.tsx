@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useRef, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from 'react'
 import { RatingContainer } from './style'
 
 export type RatingProps = {
@@ -14,8 +14,8 @@ const Rating = ({ name, value, onChange }: RatingProps) => {
     onChange(newValue)
     setSelectedValue(newValue)
   }
-  useEffect(() => {
-  },[selectedValue])
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  useEffect(() => {}, [selectedValue])
 
   return (
     <RatingContainer>
