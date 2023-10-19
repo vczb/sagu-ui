@@ -9,3 +9,4 @@
 - [`Component customization`](https://codesandbox.io/s/sagu-ui-component-customization-wk1whk?file=/src/App.tsx)
 - [`Add new object to theme`](https://codesandbox.io/s/sagu-ui-increment-colors-vxuclf?file=/src/App.tsx)
 - [`A note list app`](https://codesandbox.io/s/sagu-ui-example-note-list-72slfh?file=/src/App.tsx)
+- [`Component customization`](https://codesandbox.io/s/sagu-ui-component-customization-wk1whk?file=/src/App.tsx)
