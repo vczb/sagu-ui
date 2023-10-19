@@ -10,7 +10,9 @@ export default {
   border: {
     radius: '0.4rem',
     mini: '0.2rem',
-    xxsmall: '0.3rem'
+    xxsmall: '0.3rem',
+    none: '0',
+    rounded: '50%'
   },
   font: {
     family: {
