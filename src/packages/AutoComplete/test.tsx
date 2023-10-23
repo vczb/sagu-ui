@@ -11,7 +11,6 @@ const mockData: AutoCompleteProps = {
   options: mock
 }
 let textField: HTMLInputElement
-let container: RenderResult['container']
 let unmount: RenderResult['unmount']
 
 const AutoCompleteComponent = (props: AutoCompleteProps) => {
@@ -20,7 +19,7 @@ const AutoCompleteComponent = (props: AutoCompleteProps) => {
 
 describe('AutoComplete Component common use cases', () => {
   beforeEach(() => {
-    ;({ container, unmount } = AutoCompleteComponent(mockData))
+    ;({ unmount } = AutoCompleteComponent(mockData))
     textField = screen.getByTestId('auto-complete-input')
   })
 
@@ -85,7 +84,7 @@ describe('AutoComplete Component common use cases', () => {
 
 describe('AutoComplete Component in comboBox mode', () => {
   beforeEach(() => {
-    ;({ container, unmount } = AutoCompleteComponent(mockData))
+    ;({ unmount } = AutoCompleteComponent(mockData))
     textField = screen.getByTestId('auto-complete-input')
   })
 
@@ -138,7 +137,7 @@ describe('AutoComplete Component in comboBox mode', () => {
 
 describe('AutoComplete Component in freeSolo mode', () => {
   beforeEach(() => {
-    ;({ container, unmount } = AutoCompleteComponent({
+    ;({ unmount } = AutoCompleteComponent({
       ...mockData,
       freeSolo: true
     }))
