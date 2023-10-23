@@ -8,6 +8,8 @@ export type TagProps = {
   isPointer?: boolean
   isSlashed?: boolean
   size?: 'xsmall' | 'small' | 'medium'
+  hovered?: boolean
+  isSelected?: boolean
 } & BaseHTMLAttributes<HTMLDivElement>
 
 const Tag = ({
@@ -16,6 +18,8 @@ const Tag = ({
   isUppercase,
   isPointer,
   size,
+  hovered,
+  isSelected,
   ...props
 }: TagProps) => (
   <S.Wrapper
@@ -23,6 +27,8 @@ const Tag = ({
     isBold={isBold}
     isPointer={isPointer}
     size={size}
+    hovered={hovered}
+    isSelected={isSelected}
     {...props}
   >
     {value}
