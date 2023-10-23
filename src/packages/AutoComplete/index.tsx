@@ -101,12 +101,14 @@ export const AutoComplete = ({
           onClick={handleOnClick}
           style={{ marginRight: 10 }}
         />
-        <S.AutoCompleteArrow
-          data-testid="arrow-toggle"
-          direction={showOptions ? 'up' : 'down'}
-          show={freeSolo === false ? true : false}
-          onClick={() => setShowOptions(!showOptions)}
-        />
+        {freeSolo === false && (
+          <S.AutoCompleteArrow
+            data-testid="arrow-toggle"
+            direction={showOptions ? 'up' : 'down'}
+            show={freeSolo === false ? true : false}
+            onClick={() => setShowOptions(!showOptions)}
+          />
+        )}
       </>
 
       {showOptions && (
