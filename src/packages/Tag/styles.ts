@@ -17,7 +17,16 @@ const wrapperModifier = {
 }
 
 export const Wrapper = styled.div<
-  Pick < TagProps, 'isUppercase' | 'isBold' | 'isPointer' | 'isSlashed' | 'size' | 'hovered' | 'isSelected' >
+  Pick<
+    TagProps,
+    | 'isUppercase'
+    | 'isBold'
+    | 'isPointer'
+    | 'isSlashed'
+    | 'size'
+    | 'isDarkBgOnHover'
+    | 'isDarkBg'
+  >
 >`
   ${({
     theme,
@@ -26,11 +35,13 @@ export const Wrapper = styled.div<
     isBold,
     isPointer,
     size = 'small',
-    hovered,
-    isSelected
+    isDarkBgOnHover,
+    isDarkBg
   }) => css`
     padding: ${theme.spacings.mini} ${theme.spacings.xxsmall};
-    background: ${isSelected ? theme.colors.secondary.dark : theme.colors.primary.light};
+    background: ${isDarkBg
+      ? theme.colors.secondary.dark
+      : theme.colors.primary.light};
     color: ${theme.colors.base.white};
     width: fit-content;
     height: fit-content;
@@ -42,7 +53,9 @@ export const Wrapper = styled.div<
     ${!!isSlashed && wrapperModifier.isSlashed()};
     ${!!isBold && wrapperModifier.isBold(theme)};
     &:hover {
-      background: ${hovered ? theme.colors.secondary.dark : theme.colors.primary.light}
+      background: ${isDarkBgOnHover
+        ? theme.colors.secondary.dark
+        : theme.colors.primary.light};
     }
   `}
 `

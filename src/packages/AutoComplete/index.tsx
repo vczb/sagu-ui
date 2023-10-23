@@ -129,8 +129,8 @@ export const AutoComplete = ({
                   value={option.name}
                   onClick={() => handleOptionClick(option.name)}
                   isPointer
-                  hovered={true}
-                  isSelected={option.name === selectedOption}
+                  isDarkBgOnHover={true}
+                  isDarkBg={option.name === selectedOption}
                 />
               ))
             ) : (

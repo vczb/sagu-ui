@@ -152,7 +152,7 @@ describe('AutoComplete Component in freeSolo mode', () => {
 
     expect(screen.queryByTestId('options')).not.toBeInTheDocument()
   })
-  
+
   it('should not show arrow toggle in freeSolo mode', () => {
     expect(screen.queryByTestId('arrow-toggle')).not.toBeInTheDocument()
   })

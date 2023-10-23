@@ -3,19 +3,19 @@ import styled, { css } from 'styled-components'
 import { Select } from '../Select/styles'
 
 export type NoOptionsProps = {
-    size?: 'xsmall' | 'small' | 'medium'
+  size?: 'xsmall' | 'small' | 'medium'
 } & BaseHTMLAttributes<HTMLDivElement>
 
-export const AutoComplete = styled(Select)`${() => css`display: flex;
-  flex-direction: row;
-  align-items: center;
-  `}`
+export const AutoComplete = styled(Select)`
+  ${() => css`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  `}
+`
 
 export const NoOptionsWrapper = styled.div<Pick<NoOptionsProps, 'size'>>`
-  ${({
-    theme,
-    size = 'small'
-}) => css`
+  ${({ theme, size = 'small' }) => css`
     padding: ${theme.spacings.mini} ${theme.spacings.xxsmall};
     color: ${theme.colors.neutral.darkest};
     width: fit-content;
@@ -27,17 +27,17 @@ export const NoOptionsWrapper = styled.div<Pick<NoOptionsProps, 'size'>>`
 `
 
 const figureArrowModifiers = {
-    up: css`
+  up: css`
     transform: rotate(-45deg);
   `,
-    down: css`
+  down: css`
     transform: rotate(135deg);
   `
-};
+}
 
 export const AutoCompleteArrow = styled.div<{
-    direction: 'up' | 'down'
-    show: boolean
+  direction: 'up' | 'down'
+  show: boolean
 }>`
   ${({ theme, direction, show }) => css`
     :before {
