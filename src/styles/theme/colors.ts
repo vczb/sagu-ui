@@ -28,5 +28,5 @@ export default {
   base,
   primary,
   secondary,
-  neutral,
+  neutral
 }
