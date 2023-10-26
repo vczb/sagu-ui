@@ -46,11 +46,9 @@ You can easily override the values of the theme object
 import { theme, SaguProvider } from 'sagu-ui'
 
 function App() {
-  const customTheme = Object.assign(theme)
+  Object.assign(theme.colors.primary, { medium: "#510763" });
 
-  customTheme.colors.primary.medium = '#510763'
-
-  return <SaguProvider theme={customTheme}>...</SaguProvider>
+  return <SaguProvider theme={theme}>...</SaguProvider>
 }
 ```
 
@@ -61,17 +59,19 @@ import { theme, SaguProvider } from 'sagu-ui'
 import { CustomWrapper } from './components/CustomWrapper'
 
 function App() {
-  const customTheme = Object.assign(theme)
+  const customColors = {
+    tertiary: {
+      lighter: "#fb973a",
+      light: "#e37c1d",
+      medium: "#da710f",
+      dark: "#9e4c01"
+    }
+  };
 
-  customTheme.colors.tertiary = {
-    lighter: '#fb973a',
-    light: '#e37c1d',
-    medium: '#da710f',
-    dark: '#9e4c01'
-  }
+  Object.assign(theme.colors, customColors);
 
   return (
-    <SaguProvider theme={customTheme}>
+    <SaguProvider theme={theme}>
       <CustomWrapper>...</CustomWrapper>
     </SaguProvider>
   )
