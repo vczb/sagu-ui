@@ -1,6 +1,7 @@
 import Rating from './index'
 import React from 'react'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent } from '@testing-library/react'
+import { render } from '../../utils/testUtils'
 
 describe('Rating', () => {
   const onChangeMock = jest.fn()
