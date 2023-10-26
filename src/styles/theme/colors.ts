@@ -10,12 +10,6 @@ export const base = {
   success: '#4caf50'
 }
 
-export const rating = {
-  notselected: '#CCC',
-  selected: '#FFC700',
-  hover: '#FFDC00'
-}
-
 export const primary = ocean.primary
 
 export const secondary = ocean.secondary
@@ -35,5 +29,4 @@ export default {
   primary,
   secondary,
   neutral,
-  rating
 }
