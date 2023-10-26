@@ -16,6 +16,9 @@ const Rating = ({ name, value, onChange }: RatingProps) => {
   }
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   useEffect(() => {}, [selectedValue])
+  useEffect(() => {
+    setSelectedValue(value)
+  }, [value])
 
   return (
     <RatingContainer>

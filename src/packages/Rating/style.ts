@@ -1,35 +1,36 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const RatingContainer = styled.div`
-  float: left;
+  ${({ theme }) => css`
+    float: left;
 
-  :not(:checked) > input {
-    display: none;
-  }
+    :not(:checked) > input {
+      display: none;
+    }
 
-  :not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
-  }
-  :not(:checked) > label:before {
-    content: '★';
-  }
-  > input:checked ~ label{
-  color: #ffc700;
-}
-  :not(:checked) > label:hover,
-  :not(:checked) > label:hover ~ label{
-    color: #ffc700;
-  }
+    :not(:checked) > label {
+      float: right;
+      width: ${theme.width.medium};
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: ${theme.font.sizes.large};
+      color: ${theme.colors.rating.notselected};
+    }
+    :not(:checked) > label:before {
+      content: '★';
+    }
+    > input:checked ~ label {
+      color: ${theme.colors.rating.selected};
+    }
+    :not(:checked) > label:hover,
+    :not(:checked) > label:hover ~ label {
+      color: ${theme.colors.rating.selected};
+    }
 
-  . > input:checked + label:hover,
-  . > input:checked + label:hover ~ label{
-    color: #ffdc00;
-  }
-}
+    . > input:checked + label:hover,
+    . > input:checked + label:hover ~ label {
+      color: ${theme.colors.rating.hover};
+    }
+  `}
 `

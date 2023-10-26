@@ -46,6 +46,9 @@ export default {
     xlarge: '4.8rem',
     xxlarge: '5.6rem'
   },
+  width: {
+    medium: '1em'
+  },
   layers: {
     base: 10,
     menu: 20,
