@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box /> should render Box with default props 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Default
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with different alignment props 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Normal
+  </div>
+  <div
+    class="c1"
+  >
+    Baseline
+  </div>
+  <div
+    class="c2"
+  >
+    Center
+  </div>
+  <div
+    class="c3"
+  >
+    End
+  </div>
+  <div
+    class="c4"
+  >
+    Start
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with different flex props 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: none;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Column
+  </div>
+  <div
+    class="c1"
+  >
+    Row
+  </div>
+  <div
+    class="c2"
+  >
+    Block
+  </div>
+  <div
+    class="c3"
+  >
+    None
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with different justify props 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Space Evenly
+  </div>
+  <div
+    class="c1"
+  >
+    Space Between
+  </div>
+  <div
+    class="c2"
+  >
+    Space Around
+  </div>
+  <div
+    class="c3"
+  >
+    Center
+  </div>
+  <div
+    class="c4"
+  >
+    End
+  </div>
+  <div
+    class="c5"
+  >
+    Start
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with different variants 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #022B54;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+.c2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: transparent;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Default
+  </div>
+  <div
+    class="c1"
+  >
+    Filled
+  </div>
+  <div
+    class="c2"
+  >
+    Transparent
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with fullWidth as false  1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Full Width
+  </div>
+</div>
+`;
+
+exports[`<Box /> should render Box with nested components 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 20;
+  background: #F8F7FB;
+  display: block;
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c0"
+    >
+      Nested Box 1
+    </div>
+    <div
+      class="c0"
+    >
+      Nested Box 2
+    </div>
+  </div>
+</div>
+`;
