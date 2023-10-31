@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Divider /> should render Divider correctly 1`] = `
+.c0 {
+  height: 0.01rem;
+  background: #808080;
+  border: 0;
+}
+
+<div>
+  <hr
+    class="c0"
+  />
+</div>
+`;
