@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> should render Badge with custom size, shape, and color 1`] = `
+.c0 {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 0.8rem 1.6rem;
+  background-color: red;
+  color: #F8F7FB;
+}
+
+<div>
+  <div
+    class="c0"
+    color="red"
+    shape="circle"
+  >
+    New
+  </div>
+</div>
+`;
+
+exports[`<Badge /> should render Badge with default props 1`] = `
+.c0 {
+  display: inline-block;
+  border-radius: 0;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #022B54;
+  color: #F8F7FB;
+}
+
+<div>
+  <div
+    class="c0"
+    shape="square"
+  >
+    5
+  </div>
+</div>
+`;
