@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Ribbon /> should render Ribbon correctly with default props 1`] = `
+.c0 {
+  position: absolute;
+  top: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  color: #F8F7FB;
+  z-index: 10;
+  background-color: #01172E;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
+  height: 3.6rem;
+  right: -2rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #01172E;
+  border-top-color: #01172E;
+}
+
+.c0::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div>
+  <div
+    class="c0"
+    color="primary"
+  >
+    <div>
+      Ribbon
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Ribbon /> should render Ribbon with given size and color 1`] = `
+.c0 {
+  position: absolute;
+  top: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  color: #F8F7FB;
+  z-index: 10;
+  background-color: #34AEBC;
+  font-size: 1.2rem;
+  padding: 0 1.6rem;
+  height: 2.6rem;
+  right: -1.5rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #34AEBC;
+  border-top-color: #34AEBC;
+}
+
+.c0::before {
+  top: 2.6rem;
+  border-top-width: 0.7rem;
+  border-right-width: 1.5rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  color: #F8F7FB;
+  z-index: 10;
+  background-color: #01172E;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
+  height: 3.6rem;
+  right: -2rem;
+}
+
+.c1::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c1::before {
+  border-left-color: #01172E;
+  border-top-color: #01172E;
+}
+
+.c1::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div>
+  <div
+    class="c0"
+    color="secondary"
+  >
+    <div>
+      Ribbon
+    </div>
+  </div>
+  <div
+    class="c1"
+    color="primary"
+  >
+    <div>
+      Ribbon
+    </div>
+  </div>
+</div>
+`;
