@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextContent /> Should render text content in different variants of color 1`] = `
+.c0 {
+  font-size: 1.4rem;
+  color: #222222;
+}
+
+.c1 {
+  font-size: 1.6rem;
+  color: #222222;
+}
+
+.c2 {
+  font-size: 1.8rem;
+  color: #222222;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    This is a statement
+  </span>
+  <span
+    class="c1"
+  >
+    This is a statement
+  </span>
+  <span
+    class="c2"
+  >
+    This is a statement
+  </span>
+</div>
+`;
+
+exports[`<TextContent /> Should render text content in different variants of size 1`] = `
+.c0 {
+  font-size: 1.4rem;
+  color: #F8F7FB;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  color: #222222;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  color: #022B54;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  color: #53C3D0;
+}
+
+<div>
+  <span
+    class="c0"
+    color="white"
+  >
+    This is a statement
+  </span>
+  <span
+    class="c1"
+    color="black"
+  >
+    This is a statement
+  </span>
+  <span
+    class="c2"
+    color="primary"
+  >
+    This is a statement
+  </span>
+  <span
+    class="c3"
+    color="secondary"
+  >
+    This is a statement
+  </span>
+</div>
+`;
+
+exports[`<TextContent /> Should render text content in different variants of tag 1`] = `
+.c0 {
+  font-size: 1.4rem;
+  color: #222222;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    This is a statement
+  </p>
+  <span
+    class="c0"
+  >
+    This is a statement
+  </span>
+  <i
+    class="c0"
+  >
+    This is a statement
+  </i>
+  <b
+    class="c0"
+  >
+    This is a statement
+  </b>
+  <mark
+    class="c0"
+  >
+    This is a statement
+  </mark>
+</div>
+`;
