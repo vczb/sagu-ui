@@ -10,7 +10,7 @@ export const RatingContainer = styled.div`
 
     :not(:checked) > label {
       float: right;
-      width: ${theme.font.sizes.xsmall};
+      width: ${theme.font.sizes.medium};
       overflow: hidden;
       white-space: nowrap;
       cursor: pointer;
