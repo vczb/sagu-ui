@@ -9,9 +9,6 @@
   },
   "main": "lib/index.js",
   "types": "lib",
-  "engines": {
-    "node": "18.16.0"
-  },
   "scripts": {
     "build": "tsc -p .",
     "lint": "eslint src --max-warnings=0",
