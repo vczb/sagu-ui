@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToolTip/> should render bottom positioned ToolTip 1`] = `
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c3 {
+  visibility: hidden;
+  max-width: calc(60rem / 2);
+  background-color: #222222;
+  color: #F8F7FB;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 1.6rem 2.4rem;
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 1.6rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c0:hover .c2 {
+  visibility: visible;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    Hover me
+    <span
+      class="c2 c3"
+    >
+      Tooltip text here
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<ToolTip/> should render left positioned ToolTip 1`] = `
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c3 {
+  visibility: hidden;
+  max-width: calc(60rem / 2);
+  background-color: #222222;
+  color: #F8F7FB;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 1.6rem 2.4rem;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: calc(100% + 2.4rem);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c0:hover .c2 {
+  visibility: visible;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    Hover me
+    <span
+      class="c2 c3"
+    >
+      Tooltip text here
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<ToolTip/> should render right positioned ToolTip 1`] = `
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c3 {
+  visibility: hidden;
+  max-width: calc(60rem / 2);
+  background-color: #222222;
+  color: #F8F7FB;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 1.6rem 2.4rem;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: calc(100% + 2.4rem);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c0:hover .c2 {
+  visibility: visible;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    Hover me
+    <span
+      class="c2 c3"
+    >
+      Tooltip text here
+    </span>
+  </div>
+</div>
+`;

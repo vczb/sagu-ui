@@ -15,4 +15,12 @@ describe('<Tag/>', () => {
 
     expect(dom.getByText(/COFFEE/i)).toBeInTheDocument()
   })
+
+  it('should render slashed bold tag', async () => {
+    const { container } = render(
+      <Tag value="coffee" isUppercase={true} isBold isSlashed />
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })

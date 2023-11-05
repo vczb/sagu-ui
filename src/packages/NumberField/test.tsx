@@ -1,4 +1,4 @@
-import { render } from '../../utils/testUtils'
+import { render, screen, fireEvent } from '../../utils/testUtils'
 import React from 'react'
 import NumberField from './'
 
@@ -71,6 +71,49 @@ describe('<NumberField />', () => {
       const input = container.querySelector('input')
       decrementButton!.click()
       expect(input).toHaveValue(42)
+    })
+
+    it('should be able to change the value by typing into the input box if its between min and max', () => {
+      render(<NumberField initialValue={55} min={42} max={56} />)
+      const input = screen.getByDisplayValue('55')
+
+      fireEvent.change(input, { target: { value: 43 } })
+
+      expect(input).toHaveValue(43)
+    })
+
+    it('should not be able to change the value above max value or below min value', () => {
+      render(<NumberField initialValue={55} min={42} max={56} />)
+      const input = screen.getByDisplayValue('55')
+
+      fireEvent.change(input, { target: { value: 57 } })
+      expect(input).toHaveValue(56)
+
+      fireEvent.change(input, { target: { value: 10 } })
+      expect(input).toHaveValue(42)
+    })
+
+    it('should call on update function if provided whenever the input value gets updated', () => {
+      const onUpdate = jest.fn()
+      render(
+        <NumberField initialValue={55} min={42} max={56} onUpdate={onUpdate} />
+      )
+      const input = screen.getByDisplayValue('55')
+
+      fireEvent.change(input, { target: { value: 57 } })
+      expect(input).toHaveValue(56)
+      expect(onUpdate).toHaveBeenCalledWith(56)
+
+      fireEvent.change(input, { target: { value: 10 } })
+      expect(input).toHaveValue(42)
+      expect(onUpdate).toHaveBeenCalledWith(42)
+
+      const [decrementButton, incrementButton] = screen.getAllByRole('button')
+      fireEvent.click(incrementButton)
+      expect(onUpdate).toHaveBeenCalledWith(43)
+
+      fireEvent.click(decrementButton)
+      expect(onUpdate).toHaveBeenCalledWith(42)
     })
   })
 })

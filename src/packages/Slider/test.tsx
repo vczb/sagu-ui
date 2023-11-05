@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '../../utils/testUtils'
+import { render, screen, fireEvent } from '../../utils/testUtils'
 import Slider from './'
 import { mock } from './mock'
 
@@ -65,6 +65,32 @@ describe('<Slider />', () => {
 
       expect(prevButton).not.toHaveAttribute('disabled')
       expect(nextButton).toHaveAttribute('disabled')
+    })
+
+    it('should be able to change the images by clicking on the dots', () => {
+      render(<Slider images={mock} dots />)
+      const [prevButton, nextButton] = screen.getAllByRole('button')
+      expect(prevButton).toHaveAttribute('disabled')
+      expect(nextButton).not.toHaveAttribute('disabled')
+
+      const dots = screen.getAllByTestId('dot')
+      const dotForLastImage = dots[9]
+      fireEvent.click(dotForLastImage)
+
+      expect(prevButton).not.toHaveAttribute('disabled')
+      expect(nextButton).toHaveAttribute('disabled')
+
+      fireEvent.click(prevButton)
+
+      expect(prevButton).not.toHaveAttribute('disabled')
+      expect(nextButton).not.toHaveAttribute('disabled')
+    })
+
+    it('should render loading placeholder if loading is set to true', () => {
+      const { container } = render(<Slider images={mock} loading />)
+
+      expect(screen.queryAllByRole('img')).toHaveLength(0)
+      expect(container).toMatchSnapshot()
     })
   })
 })

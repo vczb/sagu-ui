@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> Buttons should render loading placeholder if loading is set to true 1`] = `
+.c0 {
+  max-width: 40rem;
+  height: 20rem;
+  color: #EFF0F9;
+  background-image: linear-gradient( to right, currentColor 0%, #E6E6E6 20%, currentColor 40%, currentColor 100% );
+  background-size: 80rem 14rem;
+  -webkit-animation: placeholder 1s linear infinite forwards;
+  animation: placeholder 1s linear infinite forwards;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading/> should render the huge heading with lineLeft and lineBottom 1`] = `
+.c0 {
+  color: #222222;
+  padding-left: 1.6rem;
+  border-left: 0.7rem solid #022B54;
+  position: relative;
+  margin-bottom: 3.2rem;
+  font-size: 5.2rem;
+}
+
+.c0::after {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #022B54;
+}
+
+<div>
+  <h2
+    class="c0"
+    color="black"
+  >
+    <span>
+      This is the heading
+    </span>
+  </h2>
+</div>
+`;
+
+exports[`<Heading/> should render the small heading with lineLeft and lineBottom 1`] = `
+.c0 {
+  color: #222222;
+  padding-left: 1.6rem;
+  border-left: 0.7rem solid #022B54;
+  position: relative;
+  margin-bottom: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.c0::after {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #022B54;
+}
+
+.c0::after {
+  width: 3rem;
+}
+
+<div>
+  <h2
+    class="c0"
+    color="black"
+  >
+    <span>
+      This is the heading
+    </span>
+  </h2>
+</div>
+`;

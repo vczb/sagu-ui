@@ -23,4 +23,19 @@ describe('<ToolTip/>', () => {
 
     await screen.findByText('Tooltip text here')
   })
+
+  it('should render left positioned ToolTip', () => {
+    const { container } = render(<ToolTip {...tooltipArgs} position="left" />)
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should render bottom positioned ToolTip', () => {
+    const { container } = render(<ToolTip {...tooltipArgs} position="bottom" />)
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should render right positioned ToolTip', () => {
+    const { container } = render(<ToolTip {...tooltipArgs} position="right" />)
+    expect(container).toMatchSnapshot()
+  })
 })

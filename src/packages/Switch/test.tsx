@@ -33,4 +33,15 @@ describe('<Switch />', () => {
 
     expect(switchComponent).not.toBeChecked()
   })
+
+  it('Should not be checked or disabled by default if props are not passed in explicitly', () => {
+    render(<Switch size="medium" />)
+
+    const switchComponent = screen.getByRole('checkbox')
+    expect(switchComponent).not.toBeChecked()
+
+    switchComponent.click()
+
+    expect(switchComponent).toBeChecked()
+  })
 })
