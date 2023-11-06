@@ -1,16 +1,14 @@
 import React from 'react'
 import { InputHTMLAttributes } from 'react'
-import Label from '../Label'
-import * as S from './styles'
+
+import GenericInput from '../GenericInput'
 
 export type TextFieldProps = {
   label?: string
 } & InputHTMLAttributes<HTMLInputElement>
 
 const TextField = ({ label, ...props }: TextFieldProps) => (
-  <Label title={label}>
-    <S.TextField {...props} label={label} />
-  </Label>
+  <GenericInput {...props} label={label} type="text" />
 )
 
 export default TextField
