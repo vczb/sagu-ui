@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import { Colors } from '.'
-import { theme } from '../../styles'
+
+import Button from '../Button'
 
 const figureArrowModifiers = {
   left: () => css`
@@ -11,53 +11,15 @@ const figureArrowModifiers = {
   `
 }
 
-const pageColor = {
-  default: (colors?: Colors) => css`
-    background-color: ${colors && colors.page
-      ? colors.page
-      : theme.colors.neutral.medium};
-  `,
-  hover: (colors?: Colors) => css`
-    background-color: ${colors && colors.hover
-      ? colors.hover
-      : theme.colors.neutral.medium};
-  `
-}
-
 export const Container = styled.ul`
   display: flex;
   list-style-type: none;
 `
 
-export const Item = styled.li<{
-  selected?: boolean
+export const Item = styled(Button)<{
   disabled?: boolean
-  colors?: {
-    page?: string
-    hover?: string
-  }
 }>`
-  ${({ theme, selected, disabled, colors }) => css`
-    padding: 0 1.2rem;
-    height: 3.6rem;
-    text-align: center;
-    margin: auto ${theme.spacings.mini};
-    color: ${theme.colors.base.black};
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    letter-spacing: 0.01071rem;
-    border-radius: 1.8rem;
-    line-height: 1.5;
-    font-size: ${theme.font.sizes.small};
-    min-width: 3.6rem;
-
-    :hover {
-      ${pageColor['hover'](colors)}
-      cursor: pointer;
-    }
-
-    ${selected ? pageColor['default'](colors) : ''}
+  ${({ disabled }) => css`
     ${disabled ? 'pointer-events: none;' : ''}
   `}
 `
@@ -83,8 +45,5 @@ export const Arrow = styled.div<{
 `
 
 export const Dots = styled(Item)`
-  :hover {
-    background-color: transparent;
-    cursor: default;
-  }
+  pointer-events: none;
 `
