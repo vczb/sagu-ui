@@ -15,6 +15,14 @@ describe('<Badge />', () => {
     )
     expect(container).toMatchSnapshot()
   })
+
+  it('should render a medium small circle badge', () => {
+    const { container } = render(
+      <Badge content="New" size="small" shape="circle" color="red" />
+    )
+    expect(container).toMatchSnapshot()
+  })
+
   it('should render Badge by handling custom props correctly', () => {
     const { getByTestId } = render(
       <Badge data-testid="custom-badge" title="Custom Title" content="Custom" />

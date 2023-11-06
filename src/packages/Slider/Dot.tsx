@@ -7,7 +7,7 @@ export type DotType = {
 } & BaseHTMLAttributes<HTMLDivElement>
 
 const Dot = ({ onClick, active }: DotType) => {
-  return <S.Dot onClick={onClick} active={active} />
+  return <S.Dot data-testid={'dot'} onClick={onClick} active={active} />
 }
 
 export default Dot

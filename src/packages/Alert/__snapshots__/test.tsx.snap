@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Alert /> should match snapshot for error scenario 1`] = `
+.c3 {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-color: #022B54;
+  color: #022B54;
+}
+
+.c3:hover {
+  border-color: #53C3D0;
+  color: #53C3D0;
+}
+
+.c3:active {
+  border-color: #34AEBC;
+  color: #34AEBC;
+}
+
+.c0 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  border-radius: 0.4rem;
+  position: relative;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  background-color: #f443361f;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c5 {
+  color: #4D4D4D;
+  font-size: 1.4rem;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  outline: none;
+  padding-top: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+<div>
+  <div
+    class="c0"
+    role="alert"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <button
+          class="c3"
+        >
+          X
+        </button>
+      </div>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5"
+        >
+          <div>
+            This is an alert
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Alert /> should match snapshot for success scenario 1`] = `
+.c3 {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-color: #022B54;
+  color: #022B54;
+}
+
+.c3:hover {
+  border-color: #53C3D0;
+  color: #53C3D0;
+}
+
+.c3:active {
+  border-color: #34AEBC;
+  color: #34AEBC;
+}
+
+.c0 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  border-radius: 0.4rem;
+  position: relative;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  background-color: #4caf501f;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c5 {
+  color: #4D4D4D;
+  font-size: 1.4rem;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  outline: none;
+  padding-top: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+<div>
+  <div
+    class="c0"
+    role="alert"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <button
+          class="c3"
+        >
+          X
+        </button>
+      </div>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5"
+        >
+          <div>
+            This is an alert
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Alert /> should match snapshot for warning scenario 1`] = `
+.c3 {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-color: #022B54;
+  color: #022B54;
+}
+
+.c3:hover {
+  border-color: #53C3D0;
+  color: #53C3D0;
+}
+
+.c3:active {
+  border-color: #34AEBC;
+  color: #34AEBC;
+}
+
+.c0 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  border-radius: 0.4rem;
+  position: relative;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  background-color: #ffb3001f;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c5 {
+  color: #4D4D4D;
+  font-size: 1.4rem;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  outline: none;
+  padding-top: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+<div>
+  <div
+    class="c0"
+    role="alert"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <button
+          class="c3"
+        >
+          X
+        </button>
+      </div>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5"
+        >
+          <div>
+            This is an alert
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

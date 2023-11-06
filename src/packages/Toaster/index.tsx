@@ -8,7 +8,6 @@ export type ToasterProps = {
 
 const Toaster = ({ duration, closable = true, ...props }: ToasterProps) => {
   const [isVisible, setIsVisible] = useState(true)
-
   useEffect(() => {
     if (typeof duration === 'number') {
       const timer = setTimeout(() => {

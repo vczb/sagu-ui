@@ -39,4 +39,34 @@ describe('<Alert />', () => {
 
     expect(onCloseMockFn).toBeCalled()
   })
+
+  it('should match snapshot for error scenario', () => {
+    const { container } = render(
+      <Alert severity="error" closable>
+        <div>This is an alert</div>
+      </Alert>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should match snapshot for success scenario', () => {
+    const { container } = render(
+      <Alert severity="success" closable>
+        <div>This is an alert</div>
+      </Alert>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should match snapshot for warning scenario', () => {
+    const { container } = render(
+      <Alert severity="warning" closable>
+        <div>This is an alert</div>
+      </Alert>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })
