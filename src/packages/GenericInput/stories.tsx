@@ -17,7 +17,14 @@ const selectMock = {
 export default {
   title: 'GenericInput',
   component: GenericInput,
-  args: {}
+  args: {},
+  argTypes: {
+    type: {
+      control: {
+        type: 'text'
+      }
+    }
+  }
 } as Meta
 
 export const Default: StoryFn<GenericInputProps> = (args) => (
