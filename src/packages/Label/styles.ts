@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Label = styled.label`
   position: relative;
-  height: 5rem;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 `

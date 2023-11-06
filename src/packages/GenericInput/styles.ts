@@ -14,6 +14,7 @@ export const GenericInput = styled.input<Pick<GenericInputProps, 'label'>>`
     transition: ${theme.transitions.default};
     outline: none;
     height: 100%;
+    min-height: ${theme.spacings.xlarge};
     letter-spacing: 0.1rem;
     padding: ${label ? '1.5rem 2.2rem 0 1.5rem' : '0 2.2rem 0 1.5rem'};
     &::placeholder {
