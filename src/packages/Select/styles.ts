@@ -1,4 +1,4 @@
 import styled from 'styled-components'
-import GenericInput from '../GenericInput'
+import Input from '../Input'
 
-export const Select = styled(GenericInput)``
+export const Select = styled(Input)``

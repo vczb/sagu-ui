@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { GenericInputProps } from './index'
+import { InputProps } from './index'
 
-export const GenericInput = styled.input<Pick<GenericInputProps, 'label'>>`
+export const Input = styled.input<Pick<InputProps, 'label'>>`
   ${({ theme, label }) => css`
     background: ${theme.colors.base.white};
     border-radius: ${theme.border.xxsmall};
