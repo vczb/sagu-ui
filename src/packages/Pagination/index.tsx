@@ -1,7 +1,6 @@
 import React from 'react'
 import { usePagination } from '../../hooks/pagination'
 import * as S from './styles'
-import Button from '../Button'
 
 export type Colors = {
   page?: string
@@ -10,7 +9,6 @@ export type Colors = {
 
 export type PaginationProps = {
   className?: string
-  colors?: Colors
   totalCount: number
   currentPage: number
   pageSize: number
@@ -20,7 +18,6 @@ export type PaginationProps = {
 
 const Pagination = ({
   className,
-  colors,
   totalCount,
   currentPage,
   pageSize,

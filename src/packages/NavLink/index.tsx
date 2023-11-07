@@ -15,7 +15,7 @@ const NavLink = ({
   active = false,
   disabled = false,
   size = 'medium',
-  padding,
+  padding = 'xsmall',
   ...props
 }: NavLinkProps) => (
   <S.NavLink

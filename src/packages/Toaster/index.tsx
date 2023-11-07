@@ -1,24 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useState } from 'react'
+import { ThemeContext } from 'styled-components'
+
 import Alert, { AlertProps } from '../Alert'
 
 import * as S from './styles'
-import { createPortal } from 'react-dom'
+import ProgressBar from '../ProgressBar'
 
 export type ToasterProps = {
   duration?: number | null
   closable?: boolean
-  animated?: 'top' | null
-  isFullWidth?: boolean
+  initialVisible?: boolean
 } & Omit<AlertProps, 'header'> // Omit the 'header' prop from AlertProps
 
 const Toaster = ({
-  duration = 5000,
+  duration,
   closable = true,
-  animated,
-  isFullWidth = false,
+  initialVisible = true,
+  severity = 'success',
+  onClose,
   ...props
 }: ToasterProps) => {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(initialVisible)
+
   useEffect(() => {
     if (typeof duration === 'number') {
       const timer = setTimeout(() => {
@@ -31,24 +34,30 @@ const Toaster = ({
     }
   }, [duration])
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const theme = useContext(ThemeContext)
+
+  const handleClose = useCallback(() => {
+    setIsVisible(false)
+    onClose && onClose()
+  }, [onClose])
+
   if (!isVisible) {
     return null
   }
 
-  if (animated) {
-    return createPortal(
-      <S.Toaster
+  return (
+    <S.Toaster>
+      <Alert
         {...props}
         closable={closable}
-        animated={animated}
-        duration={duration}
-        isFullWidth={isFullWidth}
-      />,
-      document.querySelector('body')!
-    )
-  }
-
-  return <Alert {...props} closable={closable} /> // Explicitly set the 'header' prop to null
+        severity={severity}
+        onClose={() => handleClose()}
+      />
+      <ProgressBar indeterminate={true} color={theme.colors.base[severity]} />
+    </S.Toaster>
+  )
 }
 
 export default Toaster
