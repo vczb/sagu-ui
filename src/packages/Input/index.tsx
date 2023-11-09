@@ -9,26 +9,19 @@ type Generic = {
   props: any
 }
 
-export type GenericInputProps = {
+export type InputProps = {
   label?: string
-  type: InputHTMLAttributes<HTMLInputElement>['type']
+  type?: InputHTMLAttributes<HTMLInputElement>['type']
   generic?: Generic
 } & InputHTMLAttributes<HTMLInputElement>
 
-const GenericInput = ({
-  label,
-  type,
-  generic = { as: 'input', props: {} },
-  ...props
-}: GenericInputProps) => {
+const Input = ({ label, type = 'text', generic, ...props }: InputProps) => {
   return (
     <Label title={label}>
-      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-      {/* @ts-ignore */}
-      <S.GenericInput
+      <S.Input
         {...props}
-        {...generic.props}
-        as={generic.as}
+        {...generic?.props}
+        as={generic?.as}
         type={type}
         label={label}
       />
@@ -36,4 +29,4 @@ const GenericInput = ({
   )
 }
 
-export default GenericInput
+export default Input

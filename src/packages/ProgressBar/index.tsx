@@ -20,6 +20,7 @@ const ProgressBar: React.FC<ProgessBarProps> = ({
 }) => {
   return (
     <S.ProgressBarWrapper
+      role="progressbar"
       data-testid="progress-bar"
       indeterminate={indeterminate}
       showValue={showValue}

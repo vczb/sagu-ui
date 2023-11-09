@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import GenericInput from '../GenericInput'
+import Input from '../Input'
 
-export const TextArea = styled(GenericInput)`
+export const TextArea = styled(Input)`
   ${({ theme, label }) => css`
     padding-top: ${label ? theme.spacings.small : theme.spacings.xsmall};
   `}

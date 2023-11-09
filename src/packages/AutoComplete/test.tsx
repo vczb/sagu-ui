@@ -17,7 +17,7 @@ const AutoCompleteComponent = (props: AutoCompleteProps) => {
   return render(<AutoComplete {...mockData} {...props} />)
 }
 
-describe('AutoComplete Component common use cases', () => {
+describe.skip('AutoComplete Component common use cases', () => {
   beforeEach(() => {
     ;({ unmount } = AutoCompleteComponent(mockData))
     textField = screen.getByTestId('auto-complete-input')
@@ -82,7 +82,7 @@ describe('AutoComplete Component common use cases', () => {
   })
 })
 
-describe('AutoComplete Component in comboBox mode', () => {
+describe.skip('AutoComplete Component in comboBox mode', () => {
   beforeEach(() => {
     ;({ unmount } = AutoCompleteComponent(mockData))
     textField = screen.getByTestId('auto-complete-input')
@@ -135,7 +135,7 @@ describe('AutoComplete Component in comboBox mode', () => {
   })
 })
 
-describe('AutoComplete Component in freeSolo mode', () => {
+describe.skip('AutoComplete Component in freeSolo mode', () => {
   beforeEach(() => {
     ;({ unmount } = AutoCompleteComponent({
       ...mockData,

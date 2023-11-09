@@ -8,11 +8,7 @@ export default {
     totalCount: 100,
     currentPage: 1,
     pageSize: 10,
-    siblingCount: 1,
-    colors: {
-      page: 'gray',
-      hover: 'blue'
-    }
+    siblingCount: 1
   }
 }
 
@@ -39,9 +35,5 @@ Default.args = {
   totalCount: 100,
   currentPage: 1,
   pageSize: 10,
-  siblingCount: 1,
-  colors: {
-    page: 'gray',
-    hover: 'blue'
-  }
+  siblingCount: 1
 }

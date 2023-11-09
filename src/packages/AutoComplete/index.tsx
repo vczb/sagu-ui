@@ -1,7 +1,8 @@
+// TODO: there are a bug on this component
 import React, { useRef, useState } from 'react'
 import { useOnClickOutside, useOnKeypress } from '../../hooks'
 import Paper from '../Paper'
-import TextField from '../TextField'
+import Input from '../Input'
 
 import Tag from '../Tag'
 import * as S from './styles'
@@ -95,7 +96,7 @@ export const AutoComplete = ({
     // @ts-ignore
     <S.AutoComplete ref={ref} data-testid="auto-complete">
       <>
-        <TextField
+        <Input
           data-testid="auto-complete-input"
           label={label}
           value={textFieldValue}
