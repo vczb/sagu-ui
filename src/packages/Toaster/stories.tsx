@@ -9,7 +9,8 @@ export default {
     children: 'This is a toaster message',
     severity: 'info',
     showIcon: true,
-    closable: true
+    closable: true,
+    onClose: () => console.log('closed')
   }
 } as Meta
 
