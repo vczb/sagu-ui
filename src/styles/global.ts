@@ -29,6 +29,9 @@ const SaguGlobalStyles: GlobalStyleComponent<
   }
 
   ${({ theme, globalFontFamily }) => css`
+    :root {
+      --color-secondary-medium: ${theme.colors.secondary.medium};
+    }
     html {
       font-size: 62.5%;
     }
@@ -36,6 +39,7 @@ const SaguGlobalStyles: GlobalStyleComponent<
     body {
       font-family: ${globalFontFamily || theme.font.family.primary};
       font-size: ${theme.font.sizes.medium};
+      background: ${theme.colors.base.white};
     }
   `}
 

@@ -35,7 +35,9 @@ export default {
       bold: 700
     }
   },
-  colors,
+  colors: {
+    ...colors
+  },
   spacings: {
     none: '0',
     xmini: '0.2rem',
@@ -61,7 +63,7 @@ export default {
   },
   shadows: {
     default: 'rgb(0 0 0 / 15%) 0px 2rem 8rem 0',
-    focus: `0 0 0.5rem ${colors.secondary.medium}`
+    focus: `0 0 0.5rem var(--color-secondary-medium, #000)`
   },
   avatarSizes: {
     large: '6rem',
