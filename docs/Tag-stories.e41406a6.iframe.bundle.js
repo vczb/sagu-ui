@@ -1,0 +1,28 @@
+"use strict";(self.webpackChunksagu_ui=self.webpackChunksagu_ui||[]).push([[621],{"./src/packages/Tag/index.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{A:()=>packages_Tag});__webpack_require__("./node_modules/react/index.js");var styled_components_browser_esm=__webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js");const wrapperModifier_isUppercase=()=>styled_components_browser_esm.AH`
+    text-transform: uppercase;
+  `,wrapperModifier_isBold=theme=>styled_components_browser_esm.AH`
+    font-weight: ${theme.font.weights.bold};
+  `,wrapperModifier_isPointer=()=>styled_components_browser_esm.AH`
+    cursor: pointer;
+  `,wrapperModifier_isSlashed=()=>styled_components_browser_esm.AH`
+    text-decoration: line-through;
+  `,Wrapper=styled_components_browser_esm.Ay.div`
+  ${({theme,isUppercase,isSlashed,isBold,isPointer,size="small",isDarkBgOnHover,isDarkBg})=>styled_components_browser_esm.AH`
+    padding: ${theme.spacings.mini} ${theme.spacings.xxsmall};
+    background: ${isDarkBg?theme.colors.secondary.dark:theme.colors.primary.light};
+    color: ${theme.colors.base.white};
+    width: fit-content;
+    height: fit-content;
+    border-radius: ${theme.border.radius};
+    font-size: ${theme.font.sizes[size]};
+    font-weight: ${theme.font.weights.regular};
+    ${!!isUppercase&&wrapperModifier_isUppercase()};
+    ${!!isPointer&&wrapperModifier_isPointer()};
+    ${!!isSlashed&&wrapperModifier_isSlashed()};
+    ${!!isBold&&wrapperModifier_isBold(theme)};
+    &:hover {
+      background: ${isDarkBgOnHover?theme.colors.secondary.dark:theme.colors.primary.light};
+    }
+  `}
+`;var jsx_runtime=__webpack_require__("./node_modules/react/jsx-runtime.js");const Tag=({value,isBold,isUppercase,isPointer,size,isDarkBgOnHover,isDarkBg,...props})=>(0,jsx_runtime.jsx)(Wrapper,{isUppercase,isBold,isPointer,size,isDarkBgOnHover,isDarkBg,...props,children:value});Tag.displayName="Tag";const packages_Tag=Tag;try{Tag.displayName="Tag",Tag.__docgenInfo={description:"",displayName:"Tag",props:{value:{defaultValue:null,description:"",name:"value",required:!0,type:{name:"string"}},isUppercase:{defaultValue:null,description:"",name:"isUppercase",required:!1,type:{name:"boolean"}},isBold:{defaultValue:null,description:"",name:"isBold",required:!1,type:{name:"boolean"}},isPointer:{defaultValue:null,description:"",name:"isPointer",required:!1,type:{name:"boolean"}},isSlashed:{defaultValue:null,description:"",name:"isSlashed",required:!1,type:{name:"boolean"}},size:{defaultValue:null,description:"",name:"size",required:!1,type:{name:"enum",value:[{value:'"small"'},{value:'"medium"'},{value:'"xsmall"'}]}},isDarkBgOnHover:{defaultValue:null,description:"",name:"isDarkBgOnHover",required:!1,type:{name:"boolean"}},isDarkBg:{defaultValue:null,description:"",name:"isDarkBg",required:!1,type:{name:"boolean"}}}},"undefined"!=typeof STORYBOOK_REACT_CLASSES&&(STORYBOOK_REACT_CLASSES["src/packages/Tag/index.tsx#Tag"]={docgenInfo:Tag.__docgenInfo,name:"Tag",path:"src/packages/Tag/index.tsx#Tag"})}catch(__react_docgen_typescript_loader_error){}},"./src/packages/Tag/stories.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Default:()=>Default,default:()=>__WEBPACK_DEFAULT_EXPORT__});__webpack_require__("./node_modules/react/index.js");var ___WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./src/packages/Tag/index.tsx"),react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./node_modules/react/jsx-runtime.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Tag",component:___WEBPACK_IMPORTED_MODULE_1__.A,args:{value:"coffee"}},Default=args=>(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(___WEBPACK_IMPORTED_MODULE_1__.A,{...args});Default.displayName="Default"}}]);
+//# sourceMappingURL=Tag-stories.e41406a6.iframe.bundle.js.map
