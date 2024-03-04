@@ -12,7 +12,7 @@ export const Table = styled.table`
 
 export const TableHead = styled.thead`
   ${({ theme }) => css`
-    background-color: ${theme.colors.base.info};
+    background-color: ${theme.colors.primary.light};
   `}
 `
 
